@@ -3,7 +3,7 @@
   <a href="*"><img title="OsJovensTitans" src="img/IdentidadeDaEquipe.jpg" style="width: 300px;" /></a>
 </div>
 <br><br>
-######Keywords: Projeto Integrado - Equipe Os Jovens Titans - Sistemas e Mídias Digitais - Universidade Federal do Ceará
+#####Keywords: Projeto Integrado - Equipe Os Jovens Titans - Sistemas e Mídias Digitais - Universidade Federal do Ceará
 <br><br>
 <h4>
   Sumário: 
