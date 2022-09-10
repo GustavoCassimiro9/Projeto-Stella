@@ -1,8 +1,9 @@
+<br>
 <div align="center" name="inicio">
   <a href="*"><img title="OsJovensTitans" src="img/IdentidadeDaEquipe.jpg" style="width: 300px;" /></a>
 </div>
 ###### Keywords: Projeto Integrado - Equipe Os Jovens Titans - Sistemas e Mídias Digitais - Universidade Federal do Ceará
-
+<br><br>
 <h4>
   Sumário: 
  <a href="#sobre">Sobre</a> • 
