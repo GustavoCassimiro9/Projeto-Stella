@@ -18,5 +18,5 @@
 
 ## :computer: Sobre
 
-# <h1 style= "color:blue;">ProjetoIntegrado1-SMD </h1>
+<h1 style= "color:blue;">ProjetoIntegrado1-SMD </h1>
 Esse repositório foi feito com o objetivo de armazenar o projeto da disciplina projeto integrado 1 do curso de Sistemas e Mídias Digitais. O projeto foi feito em cima de um problema recorrente no nosso curso que consiste no 
