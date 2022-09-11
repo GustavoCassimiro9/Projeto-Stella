@@ -11,7 +11,7 @@
  <a href="#sobre">Sobre</a> • 
  <a href="#equipe">Equipe</a> • 
  <a href="#license">Licença</a> • 
- <a href="#requisitos">Requisitos funcionais</a> •
+ <a href="#professores">Professores</a> •
  <a href="#documento">Relatório e Apresentação</a>
 </h4>
 
@@ -19,11 +19,13 @@
 
 ## :computer: Sobre
 
-Esse repositório foi criado com o objetivo de armazenar o projeto da disciplina projeto integrado 1 do curso de Sistemas e Mídias Digitais. O projeto em questão propõe uma solução facil para um problema que envolve a nosso curso, no qual consiste
+Esse repositório foi criado com o objetivo de armazenar o projeto da disciplina projeto integrado 1 do curso de Sistemas e Mídias Digitais. O projeto 
+em questão propõe uma solução facil para um problema que envolve a nosso curso, no qual o discente é aconselhado no 5 semestre a seguir um roteiro de cadeiras dependendo da área de interesse(Design interativo, Animação e audiovisual, Sistemas Multimídia, Jogos Digitais), entretando não se tinha até então algo que ajudasse
+o aluno a saber qual cadeira devesse escolher
 
 <a name="equipe"></a>
 
-## :busts_in_silhouette: Equipe: Os Jovens Titans
+## :busts_in_silhouette: Equipe: Os Jovens Titans e 
 
 |  NOME                                  |  FUNÇÃO                    |
 |  ----------------------------          |  --------------------------|
@@ -37,3 +39,13 @@ Esse repositório foi criado com o objetivo de armazenar o projeto da disciplina
 
 ## :memo: Licença
 Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o [LICENSE](https://github.com/GustavoCassimiro9/ProjetoIntegrado1-SMD-OsJovensTitans/blob/main/LICENSE).
+
+<a name= "professores"></a>
+
+## 	:woman_teacher: :man_teacher: Professores
+|  DOCENTES                                         |
+|  ----------------------------                    |  
+|   Wellington Vagner Ferreira Sarmento            |  
+|   Cátia Luzia Oliveira da Silva                  | 
+
+
