@@ -25,7 +25,7 @@ o aluno a saber qual cadeira devesse escolher
 
 <a name="equipe"></a>
 
-## :busts_in_silhouette: Equipe: Os Jovens Titans e 
+## :busts_in_silhouette: Equipe: Os Jovens Titans
 
 |  NOME                                  |  FUNÇÃO                    |
 |  ----------------------------          |  --------------------------|
