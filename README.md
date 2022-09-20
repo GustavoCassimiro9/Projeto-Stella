@@ -40,11 +40,6 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |   Jackson Pontes Cavalcante Filho      |  Programador               |
 |   Francisco Gustavo Cassimiro Ferreira |  Programador               |
 
-<a name="license"></a>
-
-## :memo: Licença
-Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o [LICENSE](https://github.com/GustavoCassimiro9/ProjetoIntegrado1-SMD-OsJovensTitans/blob/main/LICENSE).
-
 <a name= "professores"></a>
 
 ## 	:woman_teacher: :man_teacher: Professores
@@ -63,6 +58,11 @@ Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o
 |  RFG0002                          |  Autenticação e Login         | Em breve      |        |
 |  RFG0003                          |  Mostrar lista de trilhas     | Em breve      |        |
 |  RFG0004                          |  Mostrar lista de disciplinas | Em breve      |        |
+
+<a name="license"></a>
+
+## :memo: Licença
+Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o [LICENSE](https://github.com/GustavoCassimiro9/ProjetoIntegrado1-SMD-OsJovensTitans/blob/main/LICENSE).
 
 <a name="documento"></a>
 
