@@ -12,6 +12,7 @@
  <a href="#equipe">Equipe</a> • 
  <a href="#license">Licença</a> • 
  <a href="#professores">Professores</a> •
+  <a href="#requisitos">Professores</a> •
  <a href="#documento">Relatório e Apresentação</a>
 </h4>
 
@@ -48,11 +49,7 @@ Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o
 |   Wellington Vagner Ferreira Sarmento            |  
 |   Cátia Luzia Oliveira da Silva                  | 
 
-<a name="documento"></a>
-
-## :clipboard: Relatório
-
-O relatório completo sobre o processo de desenvolvimento dessa aplicação pode ser encontrado em: https://docs.google.com/document/d/1FwiaD9JFk8mSxn4_g5lY3PSJYfsE76G6rsW6UmTRpKo/edit
+<a name="requisitos"></a>
 
 ## :dart: Requisitos funcionais
 
@@ -62,4 +59,10 @@ O relatório completo sobre o processo de desenvolvimento dessa aplicação pode
 |  RFG0002                          |  Autenticação e Login         | Em breve      |        |
 |  RFG0003                          |  Mostrar lista de trilhas     | Em breve      |        |
 |  RFG0004                          |  Mostrar lista de disciplinas | Em breve      |        |
+
+<a name="documento"></a>
+
+## :clipboard: Relatório
+
+O relatório completo sobre o processo de desenvolvimento dessa aplicação pode ser encontrado em: https://docs.google.com/document/d/1FwiaD9JFk8mSxn4_g5lY3PSJYfsE76G6rsW6UmTRpKo/edit
 
