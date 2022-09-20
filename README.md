@@ -21,7 +21,7 @@
 
 Esse repositório foi criado com o objetivo de armazenar o projeto da disciplina projeto integrado 1 do curso de Sistemas e Mídias Digitais. O projeto 
 em questão propõe uma solução facil para um problema que envolve a nosso curso, no qual o discente é aconselhado no 5 semestre a seguir um roteiro de cadeiras dependendo da área de interesse(Design interativo, Animação e audiovisual, Sistemas Multimídia, Jogos Digitais), entretando não se tinha até então algo que ajudasse
-o aluno a saber qual cadeira devesse escolher
+o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi proposto pelo nosso cliente, criamos um sistema que ajuda o aluno
 
 <a name="equipe"></a>
 
@@ -43,7 +43,7 @@ Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o
 <a name= "professores"></a>
 
 ## 	:woman_teacher: :man_teacher: Professores
-|  DOCENTES                                         |
+|  DOCENTES                                        |
 |  ----------------------------                    |  
 |   Wellington Vagner Ferreira Sarmento            |  
 |   Cátia Luzia Oliveira da Silva                  | 
@@ -54,4 +54,10 @@ Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o
 
 O relatório completo sobre o processo de desenvolvimento dessa aplicação pode ser encontrado em: https://docs.google.com/document/d/1FwiaD9JFk8mSxn4_g5lY3PSJYfsE76G6rsW6UmTRpKo/edit
 
+|  Código                           |  Descrição                    |  Codificação  | Status | 
+|  ----------------------------     | ----------------------------  | ------------  | ------ |
+|  RFG0001                          |  Cadastrar usuário            | Em breve      |        |
+|  RFG0002                          |  Autenticação e Login         | Em breve      |        |
+|  RFG0003                          |  Mostrar lista de trilhas     | Em breve      |        |
+|  RFG0004                          |  Mostrar lista de disciplinas | Em breve      |        |
 
