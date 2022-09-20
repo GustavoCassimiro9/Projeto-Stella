@@ -54,6 +54,8 @@ Este código está sobre a licença GNU GPL 3.0. Para mais informações, veja o
 
 O relatório completo sobre o processo de desenvolvimento dessa aplicação pode ser encontrado em: https://docs.google.com/document/d/1FwiaD9JFk8mSxn4_g5lY3PSJYfsE76G6rsW6UmTRpKo/edit
 
+## :dart: Requisitos funcionais
+
 |  Código                           |  Descrição                    |  Codificação  | Status | 
 |  ----------------------------     | ----------------------------  | ------------  | ------ |
 |  RFG0001                          |  Cadastrar usuário            | Em breve      |        |
