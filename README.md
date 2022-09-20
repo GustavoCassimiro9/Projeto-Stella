@@ -26,7 +26,7 @@
 
 Esse repositório foi criado com o objetivo de armazenar o projeto da disciplina projeto integrado 1 do curso de Sistemas e Mídias Digitais. O projeto 
 em questão propõe uma solução facil para um problema que envolve a nosso curso, no qual o discente é aconselhado no 5 semestre a seguir um roteiro de cadeiras dependendo da área de interesse(Design interativo, Animação e audiovisual, Sistemas Multimídia, Jogos Digitais), entretando não se tinha até então algo que ajudasse
-o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi proposto pelo nosso cliente, criamos um sistema que ajuda o aluno
+o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi proposto pelo nosso cliente, criamos um sistema que ajuda o aluno a escolher ....
 
 <a name="equipe"></a>
 
