@@ -12,9 +12,13 @@
  <a href="#equipe">Equipe</a> • 
  <a href="#license">Licença</a> • 
  <a href="#professores">Professores</a> •
-  <a href="#requisitos">Professores</a> •
+  <a href="#requisitos">Requisitos Funcionais</a> •
  <a href="#documento">Relatório e Apresentação</a>
 </h4>
+
+<br>
+<h1>Projeto ainda em desenvolvimento, portanto acrescentaremos mais funcionalidades e a maioria das coisas que prototipamos ou codificamos até aqui ainda o poderá sofrer atualizações</h1>
+<br>
 
 <a name="sobre"></a>
 
