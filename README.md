@@ -17,7 +17,7 @@
 </h4>
 
 <br>
-<h1>Projeto ainda em desenvolvimento, portanto acrescentaremos mais funcionalidades e a maioria das coisas que prototipamos ou codificamos até aqui ainda o poderá sofrer atualizações</h1>
+<h1>Projeto ainda em desenvolvimento, portanto acrescentaremos mais funcionalidades e a maioria das coisas que prototipamos ou codificamos até aqui ainda o poderá sofrer atualizações.</h1>
 <br>
 
 <a name="sobre"></a>
