@@ -39,6 +39,7 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |   Lia Fernanda Rodriges da Silva       |  Design                    |
 |   Jackson Pontes Cavalcante Filho      |  Programador               |
 |   Francisco Gustavo Cassimiro Ferreira |  Programador               |
+|   Jose Mateus Freire Araujo            |  Programador               |
 
 <a name= "professores"></a>
 
