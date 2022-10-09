@@ -52,8 +52,11 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 <a name="requisitos"></a>
 
 ## :dart: Requisitos funcionais
-   
-|  Código                           |  Descrição                                                                                | Codificação  | Status | 
+
+<h4>Requisitos gerais</h4>
+
+
+|  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
 |  RFG0001                          |  Exibir tela de login                                                                     | Em breve      |        |
 |  RFG0002                          |  Validar campos da área de login                                                          | Em breve      |        |
@@ -62,6 +65,12 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  RFG0005                          |  Aprovar ou recusar acesso de login                                                       | Em breve      |        |
 |  RFG0006                          |  Realizar logout                                                                          | Em breve      |        |
 |  RFG0007                          |  Exibir mensagem de login efetuado com sucesso                                            | Em breve      |        |
+
+
+<h4>Requisitos dos estudantes</h4>
+
+|  Código                           |  Descrição                                                                                | Codificação   | Status | 
+|  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
 |  RFE0001                          |  Exibir página de explicação de trilhas                                                   | Em breve      |        |
 |  RFE0002                          |  Exibir trilhas por área                                                                  | Em breve      |        |
 |  RFE0003                          |  Exibir área de calendário semanal e disciplinas ofertadas                                | Em breve      |        |
@@ -71,6 +80,12 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  RFE0007                          |  Excluir disciplinas do calendário                                                        | Em breve      |        |
 |  RFE0008                          |  Verificar se os horários das disciplinas selecionadas são iguais                         | Em breve      |        |
 |  RFE0009                          |  Exportar em formato pdf o calendário semanal                                             | Em breve      |        |
+
+
+<h4>Requisitos dos administradores</h4>
+
+|  Código                           |  Descrição                                                                                | Codificação   | Status | 
+|  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
 |  RFA0001                          |  Exibir tela de detalhes da disciplina                                                    | Em breve      |        |
 |  RFA0002                          |  Verificar campos de cadastro                                                             | Em breve      |        |
 |  RFA0003                          |  Validar campos de cadastros                                                              | Em breve      |        |
