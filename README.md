@@ -4,6 +4,7 @@
   <h6>Keywords: Projeto Integrado - Equipe Os Jovens Titans - Sistemas e Mídias Digitais - Universidade Federal do Ceará</h6>
   <br><br>
   <h1>:star2: Projeto Stella :star2:</h1>
+  <br>
 </div>
 <br><br>
 
@@ -55,7 +56,7 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 
 ## :dart: Requisitos funcionais
 
-<h4>Requisitos gerais</h4>
+<h4>Requisitos gerais</h4> 
 
 
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
@@ -68,6 +69,7 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  RFG0006                          |  Realizar logout                                                                          | Em breve      |        |
 |  RFG0007                          |  Exibir mensagem de login efetuado com sucesso                                            | Em breve      |        |
 
+<br>
 
 <h4>Requisitos dos estudantes</h4>
 
@@ -83,6 +85,7 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  RFE0008                          |  Verificar se os horários das disciplinas selecionadas são iguais                         | Em breve      |        |
 |  RFE0009                          |  Exportar em formato pdf o calendário semanal                                             | Em breve      |        |
 
+<br>
 
 <h4>Requisitos dos administradores</h4>
 
@@ -93,6 +96,8 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  RFA0003                          |  Validar campos de cadastros                                                              | Em breve      |        |
 |  RFA0004                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            | Em breve      |        |
 |  RFA0005                          |  Exibir confirmação de disciplina cadastrada                                              | Em breve      |        |
+
+<br>
 
 <a name="license"></a>
 
