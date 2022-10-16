@@ -67,7 +67,7 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  RFG0004                          |  Solicitar acesso de login                                                                | Em breve      |        |
 |  RFG0005                          |  Aprovar ou recusar acesso de login                                                       | Em breve      |        |
 |  RFG0006                          |  Realizar logout                                                                          | Em breve      |        |
-|  RFG0007                          |  Exibir mensagem de login efetuado com sucesso                                            | Em breve      |        |
+|  RFG0007                          |  Exibir mensagem de cadastro de login efetuado com sucesso                                            | Em breve      |        |
 
 <br>
 
