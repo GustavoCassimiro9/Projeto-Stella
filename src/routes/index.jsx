@@ -17,6 +17,7 @@ export function Rotas() {
     <Route path="/" element={<Login />} /> 
     <Route path="/login" element={<Login />} /> 
     <Route path="/register" element={<RegisterUser />} /> 
+    
     <Route 
         path="/home" 
         element={
