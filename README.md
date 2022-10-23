@@ -62,12 +62,11 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
 |  RFG0001                          |  Exibir tela de login                                                                     | Em breve      |        |
-|  RFG0002                          |  Validar campos da área de login                                                          | Em breve      |        |
-|  RFG0003                          |  Enviar informações de login                                                              | Em breve      |        |
-|  RFG0004                          |  Solicitar acesso de login                                                                | Em breve      |        |
-|  RFG0005                          |  Aprovar ou recusar acesso de login                                                       | Em breve      |        |
-|  RFG0006                          |  Realizar logout                                                                          | Em breve      |        |
-|  RFG0007                          |  Exibir mensagem de cadastro de login efetuado com sucesso                                | Em breve      |        |
+|  RFG0002                          |  Enviar informações de login                                                              | Em breve      |        |
+|  RFG0003                          |  Solicitar acesso de login                                                                | Em breve      |        |
+|  RFG0004                          |  Aprovar ou recusar acesso de login                                                       | Em breve      |        |
+|  RFG0005                          |  Realizar logout                                                                          | Em breve      |        |
+|  RFG0006                          |  Exibir mensagem de cadastro de login efetuado com sucesso                                | Em breve      |        |
 
 <br>
 
