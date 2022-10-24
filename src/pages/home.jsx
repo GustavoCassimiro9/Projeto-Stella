@@ -41,7 +41,6 @@ export function Home() {
                     <h1 className="m2">Seu nome de usuário é : {user.username}!</h1>
                     <h1 className="m2">Seu email é : {user.email}!</h1>
                     <h1 className="m2">Seu id é : {user.user_id}!</h1>
-                    <h1 className="m2">O amor da sua vida é : Jackson Pontes Cavalcante Filho ❤️❤️❤️!</h1>
 
                 </div>
 
