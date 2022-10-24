@@ -1,9 +1,11 @@
 import registerAnimation from "../assets/images/register-student.json"
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import api from "../../services/api";
 import Lottie from 'lottie-react';
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
+import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom"
 import { useState } from "react";
 
@@ -22,16 +24,121 @@ export function RegisterUser() {
 
     const [passwordUser, setPasswordUser] = useState('')
     const [confirmPasswordUser, setConfirmPasswordUser] = useState('')
-
-
     const [passwordInputEmpty, setPasswordInputEmpty] = useState('')
     const [emptyPasswordFeedback, setEmptyPasswordFeedback] = useState('')
-
     const [confirmPasswordInputEmpty, setConfirmPasswordInputEmpty] = useState('')
     const [emptyConfirmPasswordFeedback, setEmptyConfirmPasswordFeedback] = useState('')
 
 
     const [showPassword, setShowPassword] = useState(false)
+
+
+    async function registerUser () {
+   
+
+
+      if (!emailUser || emailUser == "") {
+        setEmptyEmailFeedback("Digite o email!")
+        setEmailInputEmpty(true)
+      } else {
+        setEmailInputEmpty(false)
+      }
+
+      if (!user || user == "") {
+        setEmptyUserFeedback("Digite o nome de usuário!")
+        setUserInputEmpty(true)
+      } else {
+        setUserInputEmpty(false)
+      }
+
+      if (!passwordUser || passwordUser == "") {
+        setEmptyPasswordFeedback("Digite a senha!")
+        setPasswordInputEmpty(true)
+      } else {
+        setPasswordInputEmpty(false)
+      }
+
+      if (!confirmPasswordUser || confirmPasswordUser == "") {
+        setEmptyConfirmPasswordFeedback("Digite a senha!")
+        setConfirmPasswordInputEmpty(true)
+      } else {
+        setConfirmPasswordInputEmpty(false)
+      }
+
+      if( emailUser && user &&  passwordUser && confirmPasswordUser ) {
+
+        await api.post('/auth/register', {
+          email: emailUser,
+          name: user,
+          password: passwordUser,
+          confirmPassword: confirmPasswordUser
+        }).then((res) => 
+            // console.log("x-a",response)
+            Swal.fire({
+              grow: "row",
+              timerProgressBar: true,
+              icon: 'success',
+              iconColor: "green",
+              title: res.data.msg,
+              showConfirmButton: false,
+              timer: 1600
+              , toast: true,
+              position: "top-end",
+              didOpen: (toast) => {
+                toast.addEventListener("mouseenter", Swal.stopTimer);
+                toast.addEventListener("mouseleave", Swal.resumeTimer);
+              },
+            })
+    
+
+        ).catch((error) => {
+          
+          Swal.fire({
+            grow: "row",
+            timerProgressBar: true,
+            icon: 'error',
+            iconColor: "red",
+            title: error.response.data.msg,
+            showConfirmButton: false,
+            timer: 1600
+            , toast: true,
+            position: "top-end",
+            didOpen: (toast) => {
+              toast.addEventListener("mouseenter", Swal.stopTimer);
+              toast.addEventListener("mouseleave", Swal.resumeTimer);
+            },
+          })
+
+         } )
+
+    
+        // if(status){
+
+
+        // } 
+
+
+      } else {
+        Swal.fire({
+          grow: "row",
+          timerProgressBar: true,
+          icon: 'error',
+          iconColor: "red",
+          title: 'Preencha todos os campos!',
+          showConfirmButton: false,
+          timer: 1600
+          , toast: true,
+          position: "top-end",
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        })
+      }
+
+
+    }
+
 
     return (
 
@@ -188,11 +295,11 @@ export function RegisterUser() {
               <div  className="d-grid gap-2" style={{width:"100%", }} >
 
 
-                <Button  variant="outline-primary" type="submit" >
+                <Button  variant="outline-primary" onClick={ () => registerUser() } >
                   Concluir Cadastro
                 </Button>
 
-                <Button  variant="outline-primary" type="submit" onClick={ () =>  navigate("/login")} >
+                <Button  variant="outline-primary"  onClick={ () =>  navigate("/login")} >
                   Voltar
                 </Button>
 

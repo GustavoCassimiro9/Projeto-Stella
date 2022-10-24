@@ -185,7 +185,7 @@ export function Login() {
               <div style={{width:"100%", display:"flex", justifyContent: "space-between"}} >
            
                 <Button variant="outline-primary" onClick={ () =>  navigate("/register") }  >
-                  CADASTRAR
+                  CADASTRO
                 </Button>
 
                 <Button variant="outline-primary" onClick={ () => loginUser()  }>
