@@ -61,12 +61,11 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
-|  RFG0001                          |  Exibir tela de login                                                                     | Em breve      |        |
-|  RFG0002                          |  Enviar informações de login                                                              | Em breve      |        |
-|  RFG0003                          |  Solicitar acesso de login                                                                | Em breve      |        |
-|  RFG0004                          |  Aprovar ou recusar acesso de login                                                       | Em breve      |        |
-|  RFG0005                          |  Realizar logout                                                                          | Em breve      |        |
-|  RFG0006                          |  Exibir mensagem de cadastro de login efetuado com sucesso                                | Em breve      |        |
+|  RFG0001                          |  Exibir tela de login                                                                     | Em breve      | concluido       |
+|  RFG0002                          |  Enviar informações de login                                                              | Em breve      | concluido       |
+|  RFG0003                          |  Solicitar acesso de login                                                                | Em breve      | concluido       |
+|  RFG0004                          |  Aprovar ou recusar acesso de login                                                       | Em breve      | concluido       |
+|  RFG0005                          |  Realizar logout                                                                          | Em breve      | concluido        |
 
 <br>
 
@@ -91,9 +90,9 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
 |  RFA0001                          |  Exibir tela de detalhes da disciplina                                                    | Em breve      |        |
-|  RFA0002                          |  Verificar campos de cadastro                                                             | Em breve      |        |
-|  RFA0003                          |  Validar campos de cadastros                                                              | Em breve      |        |
-|  RFA0004                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            | Em breve      |        |
+|  RFA0002                          |  Verificar campos de cadastro                                                             | Em breve      | concluido       |
+|  RFA0003                          |  Validar campos de cadastros                                                              | Em breve      | concluido       |
+|  RFA0004                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            | Em breve      | concluido       |
 |  RFA0005                          |  Exibir confirmação de disciplina cadastrada                                              | Em breve      |        |
 
 <br>
