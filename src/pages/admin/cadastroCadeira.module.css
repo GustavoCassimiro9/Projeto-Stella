@@ -1,0 +1,36 @@
+.form{
+    
+}
+.input{
+    width: 28rem !important;
+}
+.select{
+    width: 8rem !important;
+    display: inline !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0.25rem !important;
+}
+.selectTrilhas{
+    width: 28rem !important;
+    display: inline !important;
+    margin-right: 0.5rem !important;
+
+}
+.inputHorario{
+    display: inline !important;
+    width: 5rem !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0.3rem !important;
+}
+.inputHorario::-webkit-outer-spin-button,
+.inputHorario::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.inputHorario[type=number] {
+    -moz-appearance:textfield;
+}
+.labelh{
+    display: inline;
+}
