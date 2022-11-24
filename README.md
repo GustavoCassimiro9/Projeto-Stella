@@ -1,6 +1,6 @@
 <br>
 <div align="center" name="inicio">
-  <a href="*"><img title="OsJovensTitans" src="img/IdentidadeDaEquipe.jpg" style="width: 300px;" /></a>
+  <a href="*"><img title="OsJovensTitans" src="./logo_jovens_titas.jpg" style="width: 300px;" /></a>
   <h6>Keywords: Projeto Integrado - Equipe Os Jovens Titans - Sistemas e Mídias Digitais - Universidade Federal do Ceará</h6>
   <br><br>
   <h1>:star2: Projeto Stella :star2:</h1>
