@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 import { Login } from "../pages/login"
 import { RegisterUser } from "../pages/registerUser"
 import { Home } from "../pages/home"
 import { PrivateRoute } from "./privateRoute"
+import {CadastroCadeira} from "../pages/admin/cadastroCadeira"
 
 
 export function Rotas() {
@@ -26,7 +26,7 @@ export function Rotas() {
         </PrivateRoute>
         } 
     />
-
+    <Route path="/cadastroCadeira" element={<CadastroCadeira></CadastroCadeira>} />
     </Routes>
 
     </BrowserRouter>
