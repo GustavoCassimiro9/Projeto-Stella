@@ -76,7 +76,7 @@ npm install
 npm start
 
 ```
-##### (Utilize o yarn install caso der algum problema ao tentar instalar as depend)
+##### (Utilize o yarn install caso der algum problema ao tentar instalar as dependências)
 
 
 <a name="requisitos"></a>
