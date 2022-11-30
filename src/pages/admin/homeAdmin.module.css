@@ -1,0 +1,18 @@
+.Button{
+    display: flex !important;
+    flex-direction: row;
+    margin-top: 4rem !important;
+    margin: 4rem auto !important;
+    height: 4rem !important;
+    width: 28rem !important;
+    text-align: center;
+}
+.Container{
+    
+}
+.Span{
+    margin: auto auto;
+}
+.Link{
+    text-decoration: none;
+}
