@@ -52,7 +52,7 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |   Wellington Vagner Ferreira Sarmento            |  
 |   Cátia Luzia Oliveira da Silva                  | 
 
-## :grey_question: Como rodar
+## Iniciando o projeto
 
 ### Clonando o repositório
 ##### Clone o repositório em sua maquina e abra em seu editor de código.
@@ -88,11 +88,11 @@ npm start
 
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
-|  RFG0001                          |  Exibir tela de login                                                                     |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | concluido       |
-|  RFG0002                          |  Enviar informações de login                                                              | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | concluido       |
-|  RFG0003                          |  Solicitar acesso de login                                                                | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | concluido       |
-|  RFG0004                          |  Aprovar ou recusar acesso de login                                                       | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | concluido       |
-|  RFG0005                          |  Realizar logout                                                                          | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/home.jsx">Código</a>     | concluido        |
+|  RFG0001                          |  Exibir tela de login                                                                     |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | Concluido       |
+|  RFG0002                          |  Enviar informações de login                                                              | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | Concluido       |
+|  RFG0003                          |  Solicitar acesso de login                                                                | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | Concluido       |
+|  RFG0004                          |  Aprovar ou recusar acesso de login                                                       | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | Concluido       |
+|  RFG0005                          |  Realizar logout                                                                          | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/home.jsx">Código</a>     | Concluido        |
 
 <br>
 
@@ -118,12 +118,12 @@ npm start
 
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
-|  RFA0001                          |  Exibir tela de Home do administrador                                                     |<a href="">Código</a>  | concluido       |
-|  RFA0002                          |  Exibir tela de detalhes da disciplina                                                    |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/consultarCadeira.jsx">Código</a>  | concluido       |
-|  RFA0003                          |  Verificar campos de cadastro                                                             |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>      | concluido       |
-|  RFA0004                          |  Validar campos de cadastros                                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | concluido       |
-|  RFA0005                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | concluido       |
-|  RFA0006                          |  Exibir confirmação de disciplina cadastrada                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | concluido      |
+|  RFA0001                          |  Exibir tela de Home do administrador                                                     |<a href="">Código</a>  | Concluido       |
+|  RFA0002                          |  Exibir tela de detalhes da disciplina                                                    |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/consultarCadeira.jsx">Código</a>  | Concluido       |
+|  RFA0003                          |  Verificar campos de cadastro                                                             |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>      | Concluido       |
+|  RFA0004                          |  Validar campos de cadastros                                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | Concluido       |
+|  RFA0005                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | Concluido       |
+|  RFA0006                          |  Exibir confirmação de disciplina cadastrada                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | Concluido      |
 |  RFA0007                          |  Editar disciplina cadastrada na tela de detalhes                                         |<a href="">Código</a>     | concluido      |
 |  RFA0008                          |  Validar campos de edição das disciplinas                                                 |<a href="">Código</a>     | concluido      |
 |  RFA0009                          |  Exibir confirmação da disciplina editada na tela de detalhes                             |<a href="">Código</a>     | concluido      |
