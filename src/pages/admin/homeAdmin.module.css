@@ -1,13 +1,20 @@
+
 .Button{
     display: flex !important;
     flex-direction: row;
     margin-top: 4rem !important;
     margin: 4rem auto !important;
     height: 4rem !important;
-    width: 28rem !important;
+    width: 18rem !important;
     text-align: center;
+    background-color: #6FCAF6 !important;
+    color: #f3f3f3  !important;
 }
 .Container{
+    text-align: center;
+    
+    height: 100vh !important;
+    background-color: #2A2356 !important;
     
 }
 .Span{
@@ -15,4 +22,9 @@
 }
 .Link{
     text-decoration: none;
+}
+.logo{
+    
+    margin: 0 auto;
+    margin-top: 5rem;
 }

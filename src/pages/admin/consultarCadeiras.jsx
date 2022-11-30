@@ -4,6 +4,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Modal from 'react-bootstrap/Modal';
 import api from "../../../services/api";
 import Table from 'react-bootstrap/Table';
+import Swal from "sweetalert2";
 import { Container } from 'react-bootstrap';
 import { Link, Navigate } from "react-router-dom";
 import { useState, useEffect, useLayoutEffect } from "react";
@@ -73,6 +74,16 @@ export function ConsultarCadeiras(){
               console.error(error);
               
             });
+            Swal.fire({
+                popup: 'swal2-show',
+                position: 'top-end',
+                width: 300,
+                height:100,
+                icon: 'success',
+                title: 'Cadeira editada com sucesso',
+                showConfirmButton: false,
+                timer: 1500
+              })
     }
     function deletarCadeiras(e){
         e.preventDefault();
@@ -81,18 +92,31 @@ export function ConsultarCadeiras(){
   
            }).then(function (response) {
               console.log(response);
+
             })
             .catch(function (error) {
               console.error(error);
               
             });
+            Swal.fire({
+                popup: 'swal2-show',
+                grow: "row",
+                position: 'top-end',
+                width: 300,
+                height:100,
+                icon: 'success',
+                title: 'Cadeira deletada com sucesso',
+                showConfirmButton: false,
+                timer: 1500
+              })
     }
     //Chamando todas as cadeiras do banco de dados
     const chamarCadeiras = (e) => {
         e.preventDefault();
     } 
-    console.log(nome, trilha, horario, dia, professor, sobre)
-    const pegandoId = (id, name, trilha, horario, dia, professor, sobre) => {
+    
+    //
+    const pegandoDados = (id, name, trilha, horario, dia, professor, sobre) => {
         setId(id)
         setNome(name)
         setTrilha(trilha)
@@ -132,7 +156,7 @@ export function ConsultarCadeiras(){
 
 
                                     <td>
-                                        <span onClick={()=> pegandoId(
+                                        <span onClick={()=> pegandoDados(
                                         cadeiras[6],
                                         cadeiras[0],
                                         cadeiras[1],

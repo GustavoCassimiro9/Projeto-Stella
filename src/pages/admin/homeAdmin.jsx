@@ -12,10 +12,11 @@ export function HomeAdmin(){
 
     return (
         <>
-            <Container className={style.Container}>
-            <Link to="/cadastroCadeira" className={style.Link}> <Button className={style.Button}><span className={style.Span}>Cadastrar Cadeiras </span> </Button></Link> 
-                
-            <Link to="/consultarCadeira" className={style.Link}>  <Button className={style.Button}><span className={style.Span}> Consultar/Atualizar Cadeiras</span></Button></Link> 
+            <Container className={style.Container} fluid>
+                <img src='../../logo.png' className={style.logo}></img>
+                <Link to="/cadastroCadeira" className={style.Link}> <Button className={style.Button}><span className={style.Span}>Cadastrar Cadeiras </span> </Button></Link> 
+                    
+                <Link to="/consultarCadeira" className={style.Link}>  <Button className={style.Button}><span className={style.Span}> Consultar/Atualizar Cadeiras</span></Button></Link> 
             </Container>
         
         </>
