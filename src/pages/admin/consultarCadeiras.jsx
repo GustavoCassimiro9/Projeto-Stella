@@ -5,12 +5,14 @@ import Modal from 'react-bootstrap/Modal';
 import api from "../../../services/api";
 import Table from 'react-bootstrap/Table';
 import { Container } from 'react-bootstrap';
-import { useState, useEffect } from "react";
+import { Link, Navigate } from "react-router-dom";
+import { useState, useEffect, useLayoutEffect } from "react";
 import style from "./consultarCadeira.module.css"
+
 
 export function ConsultarCadeiras(){
     
-    const [rest, setRest] = useState()
+    const [rest, setRest] = useState([])
     const [dataArray, setDataArray] = useState([])
 
     //Modal
@@ -31,15 +33,28 @@ export function ConsultarCadeiras(){
     const [dia, setDia] = useState([]);
     const [professor, setProfessor] = useState('');
     const [sobre, setSobre] = useState('');
+    
 
     const [id, setId] = useState()
     console.log(id)
-
     useEffect(()=>{
-        console.log("Estou sendo executado!")
-        
+
+        api.get("/cadeiras",
+          { 
+           }).then(response =>  setRest(response.data.map(function(cadeiras){
+            const allData = [cadeiras.Name, cadeiras.Trilha, cadeiras.Horario, cadeiras.Dia, cadeiras.Professor, cadeiras.Sobre, cadeiras._id]
+            return allData;
+         })) + console.log(response)
+           ).catch(function (error) {
+              console.error(error);
+              
+            });
+            
+
     })
-    
+
+    console.log("Rest : "+ rest)
+
     function updateCadeiras(e){
         e.preventDefault();
         api.patch('/cadeira/'+id,
@@ -75,23 +90,6 @@ export function ConsultarCadeiras(){
     //Chamando todas as cadeiras do banco de dados
     const chamarCadeiras = (e) => {
         e.preventDefault();
-        api.get("/cadeiras",
-          { 
-           }).then(function (response) {
-           
-              setRest(response.data)
-              
-            })
-            .catch(function (error) {
-              console.error(error);
-              
-            });
-            setDataArray(rest.map(function(cadeiras){
-                const allData = [cadeiras.Name, cadeiras.Trilha, cadeiras.Horario, cadeiras.Dia, cadeiras.Professor, cadeiras.Sobre, cadeiras._id]
-                return allData;
-             }))
-          
-
     } 
     console.log(nome, trilha, horario, dia, professor, sobre)
     const pegandoId = (id, name, trilha, horario, dia, professor, sobre) => {
@@ -106,8 +104,8 @@ export function ConsultarCadeiras(){
     //console.log(rest)
     
     return (
-            <>  <Container className='table-responsive'>
-                    <Button className='mb-4' onClick={chamarCadeiras}>Consultar Cadeiras</Button>
+            <>  <Container className='table-responsive' onLoad={chamarCadeiras} >
+                    <Link to="/homeAdmin"><Button className='mb-4'>Voltar</Button></Link>
                     <Table className='table' striped bordered hover>
                     <thead>
                         <tr>
@@ -119,7 +117,7 @@ export function ConsultarCadeiras(){
                             <th>Professor</th>
                         </tr>
                     </thead>
-                    { dataArray.map(function(cadeiras){
+                    { rest.map(function(cadeiras){
                         return (
                             
                             <tbody>
