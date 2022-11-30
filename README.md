@@ -52,7 +52,7 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |   Wellington Vagner Ferreira Sarmento            |  
 |   Cátia Luzia Oliveira da Silva                  | 
 
-## Iniciando o projeto
+## :rocket: Iniciando o projeto
 
 ### Clonando o repositório
 ##### Clone o repositório em sua maquina e abra em seu editor de código.
