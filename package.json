@@ -16,8 +16,10 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.4.1",
     "react-scripts": "^5.0.1",
+    "react-svg": "^15.1.12",
     "sweetalert2": "^11.6.1",
     "sweetalert2-react-content": "^5.0.5"
   },

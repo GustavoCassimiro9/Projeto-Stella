@@ -2,8 +2,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Login } from "../pages/login"
 import { RegisterUser } from "../pages/registerUser"
 import { Home } from "../pages/home"
+
+import { Login } from "../pages/Login"
+import { RegisterUser } from "../pages/UserRegister"
+import { Home } from "../pages/Home"
 import { PrivateRoute } from "./privateRoute"
 import {CadastroCadeira} from "../pages/admin/cadastroCadeira"
+import { Trails } from "../pages/Trails"
+import { Subjects } from "../pages/Subjects"
+import { Simulator } from "../pages/Simulator"
+import { Information } from "../pages/Information"
 
 
 export function Rotas() {
@@ -26,6 +34,46 @@ export function Rotas() {
         </PrivateRoute>
         } 
     />
+
+    <Route 
+        path="/trilhas" 
+        element={
+        <PrivateRoute>  
+            <Trails /> 
+        </PrivateRoute>
+        } 
+    />
+
+    <Route 
+        path="/simulator" 
+        element={
+        <PrivateRoute>  
+            <Simulator /> 
+        </PrivateRoute>
+        } 
+    />
+
+    <Route 
+        path="/subjects" 
+        element={
+        <PrivateRoute>  
+            <Subjects /> 
+        </PrivateRoute>
+        } 
+    />
+
+    <Route 
+        path="/info" 
+        element={
+        <PrivateRoute>  
+            <Information /> 
+        </PrivateRoute>
+        } 
+    />
+
+
+
+
     <Route path="/cadastroCadeira" element={<CadastroCadeira></CadastroCadeira>} />
     </Routes>
 
