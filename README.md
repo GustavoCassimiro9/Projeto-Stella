@@ -86,9 +86,9 @@ npm start
 <h4>Requisitos gerais</h4> 
 
 
-|  Código                           |  Descrição                                           | Codificação   | Status | 
-|  ----------------------------     | ----------------------------------------------------------------     | ------------  | ------ |
-|  RFG0001                          |  Exibir tela de login                                  |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | concluido       |
+|  Código                           |  Descrição                                                                                | Codificação   | Status | 
+|  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
+|  RFG0001                          |  Exibir tela de login                                                                     |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | concluido       |
 |  RFG0002                          |  Enviar informações de login                                                              | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | concluido       |
 |  RFG0003                          |  Solicitar acesso de login                                                                | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | concluido       |
 |  RFG0004                          |  Aprovar ou recusar acesso de login                                                       | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | concluido       |
