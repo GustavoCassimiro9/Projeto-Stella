@@ -126,6 +126,8 @@ npm start
 |  RFA0006                          |  Editar disciplina cadastrada na tela de detalhes                                         |<a href="">Código</a>     | concluido      |
 |  RFA0007                          |  Validar campos de edição das disciplinas                                                 |<a href="">Código</a>     | concluido      |
 |  RFA0008                          |  Exibir confirmação da disciplina editada na tela de detalhes                             |<a href="">Código</a>     | concluido      |
+|  RFA0009                          |  Deletar disciplina cadastrada na tela de detalhes                                         |<a href="">Código</a>     | concluido      |
+|  RFA0010                          |  Exibir confirmação do delete da disciplina  na tela de detalhes                            |<a href="">Código</a>     | concluido      |
 
 <br>
 
