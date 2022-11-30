@@ -116,11 +116,11 @@ npm start
 
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
-|  RFA0001                          |  Exibir tela de detalhes da disciplina                                                    | Em breve      |        |
-|  RFA0002                          |  Verificar campos de cadastro                                                             | Em breve      | concluido       |
-|  RFA0003                          |  Validar campos de cadastros                                                              | Em breve      | concluido       |
-|  RFA0004                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            | Em breve      | concluido       |
-|  RFA0005                          |  Exibir confirmação de disciplina cadastrada                                              | Em breve      |        |
+|  RFA0001                          |  Exibir tela de detalhes da disciplina                                                    |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/consultarCadeira.jsx">Código</a>  | concluido       |
+|  RFA0002                          |  Verificar campos de cadastro                                                             |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>      | concluido       |
+|  RFA0003                          |  Validar campos de cadastros                                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | concluido       |
+|  RFA0004                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | concluido       |
+|  RFA0005                          |  Exibir confirmação de disciplina cadastrada                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | concluido      |
 
 <br>
 
