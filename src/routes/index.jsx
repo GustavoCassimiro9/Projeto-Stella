@@ -1,9 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Login } from "../pages/login"
+import { RegisterUser } from "../pages/registerUser"
+import { Home } from "../pages/home"
 
 import { Login } from "../pages/Login"
 import { RegisterUser } from "../pages/UserRegister"
 import { Home } from "../pages/Home"
 import { PrivateRoute } from "./privateRoute"
+import {CadastroCadeira} from "../pages/admin/cadastroCadeira"
 import { Trails } from "../pages/Trails"
 import { Subjects } from "../pages/Subjects"
 import { Simulator } from "../pages/Simulator"
@@ -70,6 +74,7 @@ export function Rotas() {
 
 
 
+    <Route path="/cadastroCadeira" element={<CadastroCadeira></CadastroCadeira>} />
     </Routes>
 
     </BrowserRouter>

@@ -1,6 +1,6 @@
 <br>
 <div align="center" name="inicio">
-  <a href="*"><img title="OsJovensTitans" src="./logo_jovens_titas.jpg" style="width: 300px;" /></a>
+  <a href="*"><img title="OsJovensTitans" src="IdentidadeDaEquipe.jpg" style="width: 300px;" /></a>
   <h6>Keywords: Projeto Integrado - Equipe Os Jovens Titans - Sistemas e Mídias Digitais - Universidade Federal do Ceará</h6>
   <br><br>
   <h1>:star2: Projeto Stella :star2:</h1>
@@ -52,6 +52,33 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |   Wellington Vagner Ferreira Sarmento            |  
 |   Cátia Luzia Oliveira da Silva                  | 
 
+## :grey_question: Como rodar
+
+### Clonando o repositório
+##### Clone o repositório em sua maquina e abra em seu editor de código.
+```shell
+
+git clone https://github.com/GustavoCassimiro9/Projeto-Stella.git
+cd projetointegrado
+```
+
+### Front-end web
+##### Com o projeto aberto certifiquese de que sua maquina tem o node instalado e o npm e  siga os seguintes comandos no terminal.
+```shell
+npm install 
+npm run dev
+```
+
+### Back-end
+##### Novamente certifiquese de que sua maquina tem o node instalado e o npm e  siga os seguintes comandos no terminal.
+```shell
+npm install 
+npm start
+
+```
+##### (Utilize o yarn install caso der algum problema ao tentar instalar as depend)
+
+
 <a name="requisitos"></a>
 
 ## :dart: Requisitos funcionais
@@ -61,13 +88,11 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
-|  RFG0001                          |  Exibir tela de login                                                                     | Em breve      |        |
-|  RFG0002                          |  Validar campos da área de login                                                          | Em breve      |        |
-|  RFG0003                          |  Enviar informações de login                                                              | Em breve      |        |
-|  RFG0004                          |  Solicitar acesso de login                                                                | Em breve      |        |
-|  RFG0005                          |  Aprovar ou recusar acesso de login                                                       | Em breve      |        |
-|  RFG0006                          |  Realizar logout                                                                          | Em breve      |        |
-|  RFG0007                          |  Exibir mensagem de cadastro de login efetuado com sucesso                                | Em breve      |        |
+|  RFG0001                          |  Exibir tela de login                                                                     |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | concluido       |
+|  RFG0002                          |  Enviar informações de login                                                              | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | concluido       |
+|  RFG0003                          |  Solicitar acesso de login                                                                | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>     | concluido       |
+|  RFG0004                          |  Aprovar ou recusar acesso de login                                                       | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/login.jsx">Código</a>      | concluido       |
+|  RFG0005                          |  Realizar logout                                                                          | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/home.jsx">Código</a>     | concluido        |
 
 <br>
 
@@ -92,9 +117,9 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
 |  RFA0001                          |  Exibir tela de detalhes da disciplina                                                    | Em breve      |        |
-|  RFA0002                          |  Verificar campos de cadastro                                                             | Em breve      |        |
-|  RFA0003                          |  Validar campos de cadastros                                                              | Em breve      |        |
-|  RFA0004                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            | Em breve      |        |
+|  RFA0002                          |  Verificar campos de cadastro                                                             | Em breve      | concluido       |
+|  RFA0003                          |  Validar campos de cadastros                                                              | Em breve      | concluido       |
+|  RFA0004                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            | Em breve      | concluido       |
 |  RFA0005                          |  Exibir confirmação de disciplina cadastrada                                              | Em breve      |        |
 
 <br>
