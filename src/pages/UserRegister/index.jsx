@@ -7,8 +7,10 @@ import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom"
+import logo from '../../assets/images/LogoStella.svg'
 import { useState } from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import { ReactSVG } from "react-svg";
 
 export function RegisterUser() {
 
@@ -136,23 +138,30 @@ export function RegisterUser() {
     return (
 
   
-        <Container className="d-flex justify-content-center flex-column" style={{height:'100vh'}} >
+        <Container fluid >
   
-          <div style={{display:"flex", justifyContent:"space-evenly", alignItems: "center", height:"100 %"}} >
-  
-          <Lottie 
-                style={{height: "500px"}}
-                animationData={registerAnimation}
-                loop={true}
-          />
-      
-          <Form>
-              <h1 className="mb-4 p-2">Cadastrar Usuário</h1>
+         <Row className="d-flex justify-content-center flex-row" style={{height:'100vh'}}>
 
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
+         <Col xs={6} className="d-flex justify-content-center flex-column" style={{backgroundColor:'#EEEEEE'}}>
+              <Lottie 
+                    style={{height: "500px"}}
+                    animationData={registerAnimation}
+                    loop={true}
+              />
+          </Col>
+          <Col xs={6}  className="d-flex justify-content-center flex-column p-5" style={{backgroundColor:'#2A2356'}} >
+          <Form>
+
+          <ReactSVG src={logo} className='d-flex justify-content-center' />
+
+            <h1 className="mt-4 text-light d-flex justify-content-center"> Crie sua conta  </h1>
+
+              <Form.Group className="mt-4 px-5 text-light" controlId="formBasicEmail">
+                
                 <Form.Control 
                     type="email" 
+                    className="p-3"
+                    style={{backgroundColor:'#EEEEEE'}}
                     placeholder="Digite seu email"
                     isInvalid={emailInputEmpty}
                     onChange={
@@ -167,10 +176,12 @@ export function RegisterUser() {
 
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicUser">
-                <Form.Label>Usuário</Form.Label>
+              <Form.Group className="mt-4 px-5 text-light" controlId="formBasicUser">
+   
                 <Form.Control 
                     type="text" 
+                    className="p-3"
+                    style={{backgroundColor:'#EEEEEE'}}
                     placeholder="Digite seu usuário"
                     isInvalid={userInputEmpty}
                     onChange={
@@ -186,10 +197,12 @@ export function RegisterUser() {
   
             <div>
 
-                <Form.Group className="mb-3" >
-                  <Form.Label>Senha</Form.Label>
+                <Form.Group className="mt-4 px-5 text-light" >
+           
                   <Form.Control 
-                      type="password" 
+                      type="password"
+                      className="p-3"
+                      style={{backgroundColor:'#EEEEEE'}} 
                       id="password" 
                       placeholder="Digite sua senha"
                       isInvalid={passwordInputEmpty}
@@ -235,10 +248,12 @@ export function RegisterUser() {
                
               <div>
 
-                    <Form.Group className="mb-4" >
-                      <Form.Label> Confirmar senha </Form.Label>
+                    <Form.Group className="mt-4 px-5 text-light" >
+
                       <Form.Control 
                           type="password" 
+                          className="p-3"
+                          style={{backgroundColor:'#EEEEEE'}}
                           id="confirmPassword" 
                           placeholder="Digite sua senha novamente"
                           isInvalid={confirmPasswordInputEmpty}
@@ -285,22 +300,24 @@ export function RegisterUser() {
 
 
 
-              <div  className="d-grid gap-2" style={{width:"100%", }} >
+              <div  className="px-5 mt-3 text-light  d-grid gap-2"  >
 
 
-                <Button  variant="outline-primary" onClick={ () => registerUser() } >
+                <Button  className="p-3" style={{color:'white', backgroundColor:'#6FCAF6', }} onClick={ () => registerUser() } >
                   Concluir Cadastro
                 </Button>
 
-                <Button  variant="outline-primary"  onClick={ () =>  navigate("/login")} >
+                <Button  className="p-3" style={{color:'white', backgroundColor:'#6FCAF6', }}  onClick={ () =>  navigate("/login")} >
                   Voltar
                 </Button>
 
               </div>
 
           </Form>
-          
-          </div>
+          </Col>
+         
+
+         </Row>
   
   
           </Container>

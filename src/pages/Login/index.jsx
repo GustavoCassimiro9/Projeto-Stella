@@ -2,16 +2,16 @@ import homeSplash from "../../assets/images/student.json"
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Lottie from 'lottie-react';
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import api from "../../../services/api";
 import Swal from "sweetalert2";
 import { login } from "../../../services/auth"
 import { useState } from "react";
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
-import { FaBeer } from "react-icons/fa";
-import { AxiosError } from "axios";
 import { Col, Container, Row } from "react-bootstrap";
+import { ReactSVG } from "react-svg";
+import logo from '../../assets/images/LogoStella.svg'
 
 
 
@@ -24,18 +24,20 @@ export function Login() {
   const [emailInputEmpty, setEmailInputEmpty] = useState('')
   const [emptyEmailFeedback, setEmptyEmailFeedback] = useState('')
   const [showPassword, setShowPassword] = useState(false)
+  const [loading, setLoading] = useState(false)
   
 
 
     let navigate = useNavigate();
 
     async function loginUser () {
-   
+      setLoading(true)
 
 
       if (!emailUser || emailUser == "") {
         setEmptyEmailFeedback("Digite o email!")
         setEmailInputEmpty(true)
+        setLoading(false)
       } else {
         setEmailInputEmpty(false)
       }
@@ -43,6 +45,7 @@ export function Login() {
       if (!passwordUser || passwordUser == "") {
         setEmptyPasswordFeedback("Digite a senha!")
         setPasswordInputEmpty(true)
+        setLoading(false)
       } else {
         setPasswordInputEmpty(false)
       }
@@ -58,7 +61,6 @@ export function Login() {
           Swal.fire({
             grow: "row",
             timerProgressBar: true,
-            icon: 'error',
             iconColor: "red",
             title: error.response.data.msg,
             showConfirmButton: false,
@@ -71,6 +73,8 @@ export function Login() {
             },
           })
 
+          setLoading(false)
+          
          } )
 
     
@@ -79,15 +83,16 @@ export function Login() {
           await login(token, user)
     
           navigate("/home")
-      
-        } 
 
+          
+        } 
+        
+        setLoading(false)
 
       } else {
         Swal.fire({
           grow: "row",
           timerProgressBar: true,
-          icon: 'error',
           iconColor: "red",
           title: 'Preencha todos os campos!',
           showConfirmButton: false,
@@ -99,20 +104,20 @@ export function Login() {
             toast.addEventListener("mouseleave", Swal.resumeTimer);
           },
         })
+        setLoading(false)
+
       }
 
+      setLoading(false)
 
     }
 
     return (
-
-
-      <Container className="d-flex justify-content-center flex-column" style={{height:'100vh'}}>
+      <Container fluid>
   
-        <Row >
-  
-        
-          <Col xs={6}>
+        <Row className="d-flex justify-content-center flex-row" style={{height:'100vh'}}>
+         
+          <Col xs={6} className="d-flex justify-content-center flex-column" style={{backgroundColor:'#EEEEEE'}}>
               <Lottie 
                     style={{height: "500px"}}
                     animationData={homeSplash}
@@ -120,35 +125,40 @@ export function Login() {
               />
           </Col>
 
-          <Col xs={3} md={{ span: 4, offset: 2 }} >
-              <Form>
+          <Col xs={6}  className="d-flex justify-content-center flex-column p-5" style={{backgroundColor:'#2A2356'}} >
+              <Form >
 
-                  <h1 className="mt-5">Projeto Stella</h1>
 
-                  <Form.Group className="mt-5" controlId="formBasicEmail">
+                  <ReactSVG src={logo} className='d-flex justify-content-center' />
 
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control 
-                        type="email" 
-                        placeholder="Digite seu email" 
-                        isInvalid={emailInputEmpty}
-                        onChange={
-                          (e) => setEmailUser(e.target.value)
-                        }
-                    />
+                  <h1 className="mt-4 text-light d-flex justify-content-center">Bem-vindo</h1>
 
-                    <Form.Control.Feedback type='invalid'>
-                        {emptyEmailFeedback}
-                    </Form.Control.Feedback>
+                  <Form.Group className="mt-4 px-5 text-light" controlId="formBasicEmail">
+
+                      <Form.Control 
+                          type="email" 
+                          className="p-3"
+                          style={{backgroundColor:'#EEEEEE'}}
+                          placeholder="Email" 
+                          isInvalid={emailInputEmpty}
+                          onChange={
+                            (e) => setEmailUser(e.target.value)
+                          }
+                      />
+
+                      <Form.Control.Feedback type='invalid'>
+                          {emptyEmailFeedback}
+                      </Form.Control.Feedback>
 
                   </Form.Group>
       
-                  <Form.Group className="mt-3" >
+                  <Form.Group className="mt-3 px-5 text-light"  >
 
-                      <Form.Label>Senha</Form.Label>
                       <Form.Control 
+                      style={{backgroundColor:'#EEEEEE'}}
                         type="password" 
-                        placeholder="Digite sua senha" 
+                        className="p-3"
+                        placeholder="Senha" 
                         id="password"
                         isInvalid={passwordInputEmpty}
                         onChange={
@@ -160,7 +170,7 @@ export function Login() {
                         {emptyPasswordFeedback}
                       </Form.Control.Feedback>
 
-                    <div className="d-flex justify-content-end">
+                    <div className="d-flex justify-content-end ">
 
                           <i onClick={() => {
                                 if (showPassword === true) {
@@ -187,15 +197,24 @@ export function Login() {
 
                   </Form.Group>
 
-                  <div style={{width:"100%", display:"flex", justifyContent: "space-between"}} >
+                  <div className="px-5 mt-2  d-grid gap-2"  >
               
-                    <Button variant="outline-primary" onClick={ () =>  navigate("/register") }  >
+                    {/* <Button variant="primary" size="lg" onClick={ () =>  navigate("/register") }  >
                       CADASTRO
+                    </Button> */}
+
+                    <Button className="p-3" style={{color:'white', backgroundColor:'#6FCAF6', }} size="lg" onClick={ () => loginUser()  }>
+                      { !loading ? "Acessar" : "Carregando..."}
                     </Button>
 
-                    <Button variant="outline-primary" onClick={ () => loginUser()  }>
-                      ENTRAR
-                    </Button>
+                  </div>
+
+                  <div className="px-5 mt-3 text-light  d-grid gap-2"  >
+       
+                    <div className="d-flex justify-content-center">
+                      <p> Não tem uma conta? <Link to='/register' className='text-decoration-none '> <b className='text-light'>Cadastre-se</b> </Link>  </p>
+                    </div>
+
 
                   </div>
     
