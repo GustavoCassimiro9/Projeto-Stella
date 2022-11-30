@@ -52,6 +52,33 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 |   Wellington Vagner Ferreira Sarmento            |  
 |   Cátia Luzia Oliveira da Silva                  | 
 
+## :grey_question: Como rodar
+
+### Clonando o repositório
+##### Clone o repositório em sua maquina e abra em seu editor de código.
+```shell
+
+git clone https://github.com/GustavoCassimiro9/Projeto-Stella.git
+cd projetointegrado
+```
+
+### Front-end web
+##### Com o projeto aberto certifiquese de que sua maquina tem o node instalado e o npm e  siga os seguintes comandos no terminal.
+```shell
+npm install 
+npm run dev
+```
+
+### Back-end
+##### Novamente certifiquese de que sua maquina tem o node instalado e o npm e  siga os seguintes comandos no terminal.
+```shell
+npm install 
+npm start
+
+```
+##### (Utilize o yarn install caso der algum problema ao tentar instalar as depend)
+
+
 <a name="requisitos"></a>
 
 ## :dart: Requisitos funcionais
