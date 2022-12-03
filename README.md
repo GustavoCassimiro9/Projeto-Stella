@@ -54,6 +54,9 @@ o aluno a saber qual cadeira devesse escolher, então direcionando ao que foi pr
 
 ## :rocket: Iniciando o projeto
 
+### <a href="https://github.com/GustavoCassimiro9/Api-Projeto-Stella/tree/main/api_trilhas">Link da API do projeto (Backend)</a>
+
+
 ### Clonando o repositório
 ##### Clone o repositório em sua maquina e abra em seu editor de código.
 ```shell
@@ -124,11 +127,11 @@ npm start
 |  RFA0004                          |  Validar campos de cadastros                                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | Concluido       |
 |  RFA0005                          |  Enviar informações do campo de cadastro para o banco de disciplinas ofertadas            |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | Concluido       |
 |  RFA0006                          |  Exibir confirmação de disciplina cadastrada                                              |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/main/src/pages/admin/cadastroCadeira.jsx">Código</a>     | Concluido      |
-|  RFA0007                          |  Editar disciplina cadastrada na tela de detalhes                                         |<a href="">Código</a>     | concluido      |
-|  RFA0008                          |  Validar campos de edição das disciplinas                                                 |<a href="">Código</a>     | concluido      |
-|  RFA0009                          |  Exibir confirmação da disciplina editada na tela de detalhes                             |<a href="">Código</a>     | concluido      |
-|  RFA0010                          |  Deletar disciplina cadastrada na tela de detalhes                                         |<a href="">Código</a>     | concluido      |
-|  RFA0011                          |  Exibir confirmação do delete da disciplina  na tela de detalhes                            |<a href="">Código</a>     | concluido      |
+|  RFA0007                          |  Editar disciplina cadastrada na tela de detalhes                                         |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/Gustavo/src/pages/admin/consultarCadeiras.jsx">Código</a>     | concluido      |
+|  RFA0008                          |  Validar campos de edição das disciplinas                                                 |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/Gustavo/src/pages/admin/consultarCadeiras.jsx">Código</a>     | concluido      |
+|  RFA0009                          |  Exibir confirmação da disciplina editada na tela de detalhes                             |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/Gustavo/src/pages/admin/consultarCadeiras.jsx">Código</a>     | concluido      |
+|  RFA0010                          |  Deletar disciplina cadastrada na tela de detalhes                                         |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/Gustavo/src/pages/admin/consultarCadeiras.jsx">Código</a>     | concluido      |
+|  RFA0011                          |  Exibir confirmação do delete da disciplina  na tela de detalhes                            |<a href="https://github.com/GustavoCassimiro9/Projeto-Stella/blob/Gustavo/src/pages/admin/consultarCadeiras.jsx">Código</a>     | concluido      |
 
 <br>
 
