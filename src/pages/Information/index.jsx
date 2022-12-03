@@ -32,9 +32,9 @@ const body = <Container fluid>
 
             <Row className='m-1'>
 
-             <Col className='d-flex flex-row' >
 
-                    <Card className='m-2 border bg-secondary text-white' style={{ width: '18rem' }}  >
+             <Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}>
+                    <Card className='m-2 border bg-secondary text-white' style={{ width: '100%', height:'90%' }}  >
                         <Card.Header> Dúvidas </Card.Header>
                         <Card.Body>
                             <Card.Title> Posso seguir mais de uma trilha? </Card.Title>
@@ -43,8 +43,10 @@ const body = <Container fluid>
                             </Card.Text>
                         </Card.Body>
                     </Card>
+             </Col>
 
-                    <Card className='m-2 border bg-warning text-white' style={{ width: '18rem' }}>
+             <Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}>
+                    <Card className='m-2 border bg-warning text-white' style={{ width: '100%', height:'90%' }}>
                         <Card.Header> Dúvidas </Card.Header>
                         <Card.Body>
                             <Card.Title> O que são disciplinas eletivas? </Card.Title>
@@ -53,8 +55,10 @@ const body = <Container fluid>
                             </Card.Text>
                         </Card.Body>
                     </Card>
+             </Col>
 
-                    <Card className='m-2 border bg-light text-dark' style={{ width: '18rem' }}>
+             <Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}>
+                    <Card className='m-2 border  bg-light text-dark' style={{ width: '100%', height:'90%' }}>
                         <Card.Header> Dúvidas </Card.Header>
                         <Card.Body>
                             <Card.Title> Qual trilha eu devo seguir? </Card.Title>
@@ -63,8 +67,10 @@ const body = <Container fluid>
                             </Card.Text>
                         </Card.Body>
                     </Card>
+             </Col>
 
-                    <Card className='m-2 border bg-danger text-white' style={{ width: '18rem' }}>
+             <Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}>
+                    <Card className='m-2 border bg-danger text-white' style={{ width: '100%', height:'90%' }}>
                         <Card.Header> Dúvidas </Card.Header>
                         <Card.Body>
                             <Card.Title> Quais disciplinas são da minha trilha? </Card.Title>
@@ -73,8 +79,9 @@ const body = <Container fluid>
                             </Card.Text>
                         </Card.Body>
                     </Card>
+             </Col>
 
-             </Col>   
+           
 
 
             </Row>
