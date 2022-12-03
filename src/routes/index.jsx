@@ -1,8 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Login } from "../pages/login"
-import { RegisterUser } from "../pages/registerUser"
-import { Home } from "../pages/home"
-
 import { Login } from "../pages/Login"
 import { RegisterUser } from "../pages/UserRegister"
 import { Home } from "../pages/Home"

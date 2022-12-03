@@ -1,76 +1,127 @@
 import { Card, CardGroup, Col, Row } from "react-bootstrap"
 import Sidebar from "../../components/SideBar"
 import { ReactSVG } from "react-svg";
-import coding from '../../assets/images/coding.svg'
-import design from '../../assets/images/design.svg'
-import audiovisual from '../../assets/images/audiovisual.svg'
-import games from '../../assets/images/games.svg'
+import Lottie from 'lottie-react';
+import coding from '../../assets/images/coding.json'
+import design from '../../assets/images/design.json'
+import audiovisual from '../../assets/images/audiovisual.json'
+import games from '../../assets/images/games.json'
 import './index.css'
+import { Link } from "react-router-dom";
 
 export function Trails() {
 
 const body =  <> 
+  <Row>
+
     <CardGroup className="p-5">
             
-        <Card className=' m-4 border bg-light'> 
-            <ReactSVG src={coding} fontSize={5} />
-            {/* <Card.Img variant="top" src={image}/> */}
-            <Card.Body>
-            <Card.Title> Sistemas </Card.Title>
-            <Card.Text>
+
+<Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}	>
+
+        <Card className='m-4 border bg-light' style={{height:'90%'}}> 
+        <Col xs={8} className="d-flex justify-content-center flex-column" style={{width:'100%'}}>
+              <Lottie 
+                    style={{height: "200px"}}
+                    animationData={coding}
+                    loop={true}
+              />
+          </Col>
+
+            <Card.Body className="d-flex align-items-center flex-column">
+            <Card.Title > Sistemas </Card.Title>
+            <Card.Text style={{textAlign:'justify', marginTop:2}}>
                 Aprofundar conhecimentos em programação para se tornar um desenvolvedor full stack!
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <small className="text-muted">Atualizado 5 min atrás </small>
+            <Link to='/sistemas' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
-        <Card className=' m-4 border bg-light'>
-            {/* <Card.Img variant="top" src={image}/> */}
-            <ReactSVG src={design} fontSize={15} />
-            <Card.Body>
-            <Card.Title> Design Digital Interativo </Card.Title>
-            <Card.Text>
+</Col>
+
+<Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}>
+
+        <Card className=' m-4 border bg-light' style={{height:'90%'}}>
+        <Col xs={6} className="d-flex justify-content-center flex-column" style={{ width:'100%' }}>
+              <Lottie 
+                    style={{height: "200px"}}
+                    animationData={design}
+                    loop={true}
+              />
+          </Col>
+
+            <Card.Body className="d-flex align-items-center flex-column">
+            <Card.Title > Design Digital Interativo </Card.Title>
+            <Card.Text style={{textAlign:'justify', marginTop:2}}>
             Aprofundar os conhecimentos sobre as bases teóricas e práticas do Design e do desenvolvimento de tecnologias digitais interativas adquiridas na formação básica inicial do curso.
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <small className="text-muted">Atualizado 15 min atrás</small>
+            <Link to='/design' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
-        <Card className=' m-4 border bg-light'>
-            
-            {/* <Card.Img variant="top" src={image}/> */}
-            <ReactSVG src={audiovisual} fontSize={15} />
+</Col>
 
-            <Card.Body>
-            <Card.Title> Audiovisual </Card.Title>
-            <Card.Text>
+<Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6} >
+
+        <Card className=' m-4 border bg-light' style={{height:'90%'}}>
+            
+        <Col xs={6} className="d-flex justify-content-center flex-column" style={{width:'100%'}}>
+              <Lottie 
+                    style={{height: "200px"}}
+                    animationData={audiovisual}
+                    loop={true}
+                    size={15}
+              />
+          </Col>
+
+
+            <Card.Body className="d-flex align-items-center flex-column">
+            <Card.Title  > Audiovisual </Card.Title>
+            <Card.Text style={{textAlign:'justify', marginTop:2}}>
                 Aprofundar os conhecimentos na criação e produção de conteúdo audiovisual!
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <small className="text-muted">Atualizado 20 min atrás</small>
+            <Link to='/audiovisual' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
-        <Card className=' m-4 border bg-light'>
+</Col>
+
+<Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}>
+
+        <Card className=' m-4 border bg-light' style={{height:'90%'}}>
             {/* <Card.Img variant="top" src={image}/> */}
-            <ReactSVG src={games} fontSize={15} />
-            <Card.Body>
+            
+            <Col xs={6} className="d-flex justify-content-center flex-column" style={{width:'100%',color:'#9B179A'}}>
+              <Lottie 
+                    style={{height: "200px"}}
+                    animationData={games}
+                    loop={true}
+              />
+          </Col>
+
+            <Card.Body className="d-flex align-items-center flex-column ">
             <Card.Title> Jogos </Card.Title>
-            <Card.Text>
+            <Card.Text style={{textAlign:'justify', marginTop:2}}>
                 Aprofundar os conhecimentos na criação e produção de jogos!      
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <small className="text-muted">Atualizado 12 min atrás</small>
+            <Link to='/jogos' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
+</Col>
+
+
     </CardGroup>               
+
+  </Row>
 
 
 </>
