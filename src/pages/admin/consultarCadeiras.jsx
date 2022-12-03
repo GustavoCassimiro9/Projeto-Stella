@@ -103,7 +103,7 @@ export function ConsultarCadeiras(){
                 grow: "row",
                 position: 'top-end',
                 width: 300,
-                height:100,
+                height:50,
                 icon: 'success',
                 title: 'Cadeira deletada com sucesso',
                 showConfirmButton: false,
@@ -128,31 +128,33 @@ export function ConsultarCadeiras(){
     //console.log(rest)
     
     return (
-            <>  <Container className='table-responsive' onLoad={chamarCadeiras} >
-                    <Link to="/homeAdmin"><Button className='mb-4'>Voltar</Button></Link>
+            <>  
+                <div className={style.Container}>
+                <Container className='table-responsive' onLoad={chamarCadeiras} fluid>
+                    <Link to="/homeAdmin"><Button className={style.btnReturn}>Voltar</Button></Link>
                     <Table className='table' striped bordered hover>
-                    <thead>
+                    <thead className={style.thead}>
                         <tr>
-                            <th>Nome</th>
-                            <th>Trilha</th>
-                            <th>Inicio</th>
-                            <th>Final</th>
-                            <th>Dias</th>
-                            <th>Professor</th>
+                            <th className={style.th}>Nome</th>
+                            <th className={style.th}>Trilha</th>
+                            <th className={style.th}>Inicio</th>
+                            <th className={style.th}>Final</th>
+                            <th className={style.th}>Dias</th>
+                            <th className={style.th}>Professor</th>
                         </tr>
                     </thead>
                     { rest.map(function(cadeiras){
                         return (
                             
-                            <tbody>
-                                <tr>
+                            <tbody className={style.tbody}>
+                                <tr >
                                     
-                                    <td>{cadeiras[0]}</td>
-                                    <td>{cadeiras[1]}</td>
-                                    <td>{cadeiras[2][0]}</td>
-                                    <td>{cadeiras[2][1]}</td>
-                                    <td>{cadeiras[3][0] + " " + cadeiras[3][1]  }</td>
-                                    <td>{cadeiras[4]}</td>
+                                    <td className={style.td}>{cadeiras[0]}</td>
+                                    <td className={style.td}>{cadeiras[1]}</td>
+                                    <td className={style.td}>{cadeiras[2][0]}</td>
+                                    <td className={style.td}>{cadeiras[2][1]}</td>
+                                    <td className={style.td}>{cadeiras[3][0] + " / " + cadeiras[3][1]  }</td>
+                                    <td className={style.td}>{cadeiras[4]}</td>
 
 
                                     <td>
@@ -166,7 +168,7 @@ export function ConsultarCadeiras(){
                                         cadeiras[5]
                                         
                                         )}>
-                                            <Button onClick={handleShow}>Editar</Button> <Button variant="danger" onClick={handleShowDelete}>Deletar</Button>
+                                            <Button onClick={handleShow} className={style.btn} >Editar</Button> <Button variant="danger" onClick={handleShowDelete}>Deletar</Button>
                                         </span>
                                     
                                         <Modal show={showDelete} onHide={handleCloseDelete}>
@@ -275,6 +277,7 @@ export function ConsultarCadeiras(){
                     </Table>
 
                 </Container>    
+                </div>
             </>
     )
 

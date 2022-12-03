@@ -2,8 +2,10 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import api from "../../../services/api";
+import Swal from "sweetalert2";
 import { Container } from 'react-bootstrap';
 import { useState } from "react";
+import { Link, Navigate } from "react-router-dom";
 import style from "./cadastroCadeira.module.css"
 
 export function CadastroCadeira(){
@@ -46,6 +48,16 @@ export function CadastroCadeira(){
          }).then(function (response) {
             console.log(response);
             setRes(response)
+            Swal.fire({
+              popup: 'swal2-show',
+              position: 'top-end',
+              width: 300,
+              height:100,
+              icon: 'success',
+              title: 'Cadeira criada com sucesso',
+              showConfirmButton: false,
+              timer: 1500
+            })
           })
           .catch(function (error) {
             console.error(error);
@@ -128,9 +140,11 @@ export function CadastroCadeira(){
     console.log(horarioCont)
 
     return (
-            <Container onKeyUp={eventsPag}>
+            <Container onKeyUp={eventsPag} className={style.Container} fluid>
+              <img src='../../logo.png' className={style.logo}></img>
+              <div className={style.divCenter}>
               <Form onSubmit={submit} className={style.form} >
-
+                <h2 className={style.titulo}>Cadastre a cadeira</h2>
                 <Form.Group className='mb-3'>
                   <Form.Label className='h6'>Informe o nome da cadeira</Form.Label>
                   <Form.Control className={style.input} type='text' isInvalid={nomeInputEmpty} value={nome} onChange={(e) => setNome(e.target.value)}/>
@@ -209,9 +223,13 @@ export function CadastroCadeira(){
                        {emptySobreFeedback}
                   </Form.Control.Feedback>
                 </Form.Group>
-
-                <Button type="submit">Cadastrar</Button>
+                <Link to="/homeAdmin" className={style.btnReturn}><Button className='mb-4' className={style.btn}>Voltar</Button></Link>
+                <Button type="submit" className={style.btn}>Cadastrar</Button>
+                
               </Form>
+              </div>
+              
+              
                 
             </Container>
     )
