@@ -1,12 +1,13 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import api from "../../../services/api";
+import api from "../../../../services/api";
 import { Container } from 'react-bootstrap';
 import { useState } from "react";
-import style from "./cadastroCadeira.module.css"
+import style from "./index.css"
+import Sidebar from '../../../components/SideBar';
 
-export function CadastroCadeira(){
+export function RegisterSubject(){
 
     const [nome, setNome] = useState('');
     const [trilha, setTrilha] = useState('');
@@ -127,8 +128,8 @@ export function CadastroCadeira(){
     console.log(horario[0], horario[1])
     console.log(horarioCont)
 
-    return (
-            <Container onKeyUp={eventsPag}>
+    const body = <>
+                <Container onKeyUp={eventsPag} className='p-2'>
               <Form onSubmit={submit} className={style.form} >
 
                 <Form.Group className='mb-3'>
@@ -210,9 +211,17 @@ export function CadastroCadeira(){
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Button type="submit">Cadastrar</Button>
+                  <div  className='d-flex justify-content-md-end' style={{width:'100%'}}>
+                     <Button type="submit">Cadastrar</Button>
+                  </div>
               </Form>
                 
             </Container>
+    </>
+
+    return (
+      <>
+          <Sidebar sidebarTitle="REGISTRO DE CADEIRA" content={body} />
+      </>
     )
 }

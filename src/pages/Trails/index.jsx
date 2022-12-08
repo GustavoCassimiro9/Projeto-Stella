@@ -14,7 +14,7 @@ export function Trails() {
 const body =  <> 
   <Row>
 
-    <CardGroup className="p-5">
+    <CardGroup className="p-2">
             
 
 <Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}	>
@@ -35,7 +35,7 @@ const body =  <>
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <Link to='/sistemas' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
+            <Link to='/sistemas' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
@@ -59,7 +59,7 @@ const body =  <>
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <Link to='/design' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
+            <Link to='/design' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
@@ -86,7 +86,7 @@ const body =  <>
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <Link to='/audiovisual' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
+            <Link to='/audiovisual' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
@@ -97,7 +97,7 @@ const body =  <>
         <Card className=' m-4 border bg-light' style={{height:'90%'}}>
             {/* <Card.Img variant="top" src={image}/> */}
             
-            <Col xs={6} className="d-flex justify-content-center flex-column" style={{width:'100%',color:'#9B179A'}}>
+            <Col xs={6} className="d-flex justify-content-center flex-column" style={{width:'100%',color:'#2A2356'}}>
               <Lottie 
                     style={{height: "200px"}}
                     animationData={games}
@@ -112,7 +112,7 @@ const body =  <>
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <Link to='/jogos' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#9B179A'}}> Saiba mais </Link>
+            <Link to='/jogos' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 

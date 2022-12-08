@@ -3,7 +3,8 @@ import { Login } from "../pages/Login"
 import { RegisterUser } from "../pages/UserRegister"
 import { Home } from "../pages/Home"
 import { PrivateRoute } from "./privateRoute"
-import {CadastroCadeira} from "../pages/admin/cadastroCadeira"
+import { RegisterSubject } from "../pages/admin/RegisterSubject"
+import { Management } from "../pages/admin/Management"
 import { Trails } from "../pages/Trails"
 import { Subjects } from "../pages/Subjects"
 import { Simulator } from "../pages/Simulator"
@@ -67,10 +68,23 @@ export function Rotas() {
         } 
     />
 
+    <Route 
+        path="/management" 
+        element={
+        <PrivateRoute>  
+            <Management /> 
+        </PrivateRoute>
+        } 
+    />
 
 
-
-    <Route path="/cadastroCadeira" element={<CadastroCadeira></CadastroCadeira>} />
+    <Route 
+        path="/cadastrar_cadeira" 
+        element={ 
+            <PrivateRoute>  
+            <RegisterSubject />
+        </PrivateRoute>
+        } />
     </Routes>
 
     </BrowserRouter>
