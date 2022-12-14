@@ -1,0 +1,61 @@
+.form{
+    margin: 0 auto !important;
+    width: 30rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.input{
+    width: 28rem !important;
+}
+.select{
+    width: 8rem !important;
+    display: inline !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0.25rem !important;
+}
+.selectTrilhas{
+    width: 28rem !important;
+    display: inline !important;
+    margin-right: 0.5rem !important;
+
+}
+.inputHorario{
+    display: inline !important;
+    width: 5rem !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0.3rem !important;
+}
+.inputHorario::-webkit-outer-spin-button,
+.inputHorario::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.inputHorario[type=number] {
+    -moz-appearance:textfield;
+}
+.labelh{
+    display: inline;
+    
+}
+.divCenter{
+    margin: 0 auto;
+}
+.btnReturn{
+    margin-right: 18rem !important;
+    
+}
+.Container{
+    
+    background-color: #2A2356 !important;
+    color: aliceblue !important;
+}
+.logo{
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+.titulo{
+    
+}

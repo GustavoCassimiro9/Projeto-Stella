@@ -1,19 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import * as FaIcons  from 'react-icons/fa';
+import * as AiIcons  from 'react-icons/ai';
 import { SidebarData } from '../SidebarData';
 import './index.css'
 import { IconContext } from 'react-icons';
 import { ReactSVG } from 'react-svg'
 import logo from '../../assets/images/LogoStella.svg'
 import { Col, Container, Nav, Row } from 'react-bootstrap';
-import { logout } from '../../../services/auth';
+import { logout, userType } from '../../../services/auth';
 
 export default function Sidebar ( { sidebarTitle, content } ) {
 
     const [sidebar,setSidebar] = useState(false)
+    const [userTypeControl,setUserTypeControl] = useState(false)
 
     const showSidebar = () => setSidebar(!sidebar)
+
+    useEffect(()=> {
+        setUserTypeControl (userType())
+    })
 
     return (
         <>  
@@ -40,7 +46,14 @@ export default function Sidebar ( { sidebarTitle, content } ) {
                                         )
                                     }) }
 
-                            
+                            {userTypeControl === 1?
+                            <li className='nav-text'>
+                                <Link to='/management'>
+                                    <AiIcons.AiOutlineSetting/>
+                                    <span>Gerenciar </span>
+                                </Link>
+                            </li>:''}
+
                              <li className='nav-text'>
                                              <Link to='/login' onClick={() => logout()}>
                                                 <FaIcons.FaSignOutAlt/>
