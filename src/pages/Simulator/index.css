@@ -16,10 +16,17 @@ td{
     padding-bottom: 0.5rem !important;
     width: initial;
     text-align: center !important;
-    height: 6rem !important;
+    height: 4rem !important;
     min-height: 2rem!important;
-    
+   
+    font-weight: 600 !important;
+    margin-left: 10px !important;
+
 }
 tr{
     padding-bottom: 5px !important;
+}
+
+.horas{
+    padding: 0 !important;
 }

@@ -13,6 +13,7 @@ import { SistemasMultimidia } from "../pages/Trails/SistemasMultimidia"
 import { Jogos } from "../pages/Trails/Jogos"
 import { AudioVisual } from "../pages/Trails/AudioVisual"
 import { DesignInterativo } from "../pages/Trails/DesignInterativo"
+import { EditSubject } from "../pages/admin/EditSubject"
 
 
 export function Rotas() {
@@ -87,6 +88,15 @@ export function Rotas() {
         element={ 
             <PrivateRoute>  
             <RegisterSubject />
+        </PrivateRoute>
+        } 
+    />
+
+    <Route 
+        path="/editar_cadeira" 
+        element={ 
+            <PrivateRoute>  
+            <EditSubject />
         </PrivateRoute>
         } 
     />

@@ -35,13 +35,13 @@ export function AudioVisual() {
         setNome(n)
     }
     const body = <>
-        <Container>
-            <Row>
+        <Container  fluid>
+            <Row className="mt-5">
                 <p>A trilha de Design Digital interativo é um itinerário formativo focado em estimular uma visão crítica do processo de design e se suas funções (prática, estética e simbólica). Abrange a interatividade no design digital e questões relativas à experiência do usuário.</p>
-                <h3>Objetivo da trilha </h3>
-                <p>Aprofundar os conhecimentos sobre as bases teóricas e práticas do Design e do desenvolvimento de tecnologias digitais interativas adquiridas na formação básica inicial do curso.</p>
+                <h3 className="mt-5 ">Objetivo da trilha </h3>
+                <p >Aprofundar os conhecimentos sobre as bases teóricas e práticas do Design e do desenvolvimento de tecnologias digitais interativas adquiridas na formação básica inicial do curso.</p>
 
-                <h3>Professores</h3>
+                <h3 className="mt-5 ">Professores</h3>
                 {
                     rest.map(function (cadeira) {
                         if (cadeira[1] == "AudioVisual") {
@@ -58,7 +58,7 @@ export function AudioVisual() {
 
                 }
                 <p></p>
-                <h3>Disciplinas núcleo da trilha</h3>
+                <h3 className="mt-5 ">Disciplinas núcleo da trilha</h3>
                 <p>Estas disciplinas devem ter oferta regular para permitir a manutenção mínima da trilha. Essas são as disciplinas mais diretamente alinhadas com os objetivos e descrição da trilha de design digital interativo.</p>
                 {
                     rest.map(function (cadeira) {
@@ -99,7 +99,7 @@ export function AudioVisual() {
         <>
 
             <Sidebar
-                sidebarTitle='AudioVisual'
+                sidebarTitle='Audiovisual'
                 content={body}
             />
 

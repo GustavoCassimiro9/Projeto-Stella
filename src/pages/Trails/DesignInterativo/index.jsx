@@ -1,4 +1,4 @@
-import { Container, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import Sidebar from "../../../components/SideBar"; 
 import api from "../../../../services/api"; 
 import Button from 'react-bootstrap/Button';
@@ -35,13 +35,13 @@ export function DesignInterativo() {
         setNome(n)
     }
     const body = <>
-        <Container>
-            <Row>
+        <Container fluid >
+            <Row className="mt-5"> 
                 <p>A trilha de Design Digital interativo é um itinerário formativo focado em estimular uma visão crítica do processo de design e se suas funções (prática, estética e simbólica). Abrange a interatividade no design digital e questões relativas à experiência do usuário.</p>
-                <h3>Objetivo da trilha </h3>
+                <h3 className="mt-5">Objetivo da trilha </h3>
                 <p>Aprofundar os conhecimentos sobre as bases teóricas e práticas do Design e do desenvolvimento de tecnologias digitais interativas adquiridas na formação básica inicial do curso.</p>
 
-                <h3>Professores</h3>
+                <h3 className="mt-5">Professores</h3>
                 {
                     rest.map(function (cadeira) {
                         if (cadeira[1] == "Design Interativo") {
@@ -58,37 +58,41 @@ export function DesignInterativo() {
 
                 }
                 <p></p>
-                <h3>Disciplinas núcleo da trilha</h3>
+                <h3 className="mt-5">Disciplinas núcleo da trilha</h3>
                 <p>Estas disciplinas devem ter oferta regular para permitir a manutenção mínima da trilha. Essas são as disciplinas mais diretamente alinhadas com os objetivos e descrição da trilha de design digital interativo.</p>
-                {
-                    rest.map(function (cadeira) {
-                        if (cadeira[1] == "Design Interativo") {
-                            return (
-                                <>
-                                    <span onClick={() => pegarDados(cadeira[0], cadeira[5])}>
-                                        <Button onClick={handleShow}>
-                                            {cadeira[0]}
-                                        </Button>
-                                    </span>
-                                    <Modal show={show} onHide={handleClose}>
-                                        <Modal.Header closeButton>
-                                            <Modal.Title>{nome}</Modal.Title>
-                                        </Modal.Header>
-                                        <Modal.Body>
+                
+                <Col className="d-flex flex-wrap flex-direction-row" >
+                        {
+                            rest.map(function (cadeira) {
+                                if (cadeira[1] == "Design Interativo") {
+                                    return (
+                                        <>
+                                            <span onClick={() => pegarDados(cadeira[0], cadeira[5])}>
+                                                <Button  className="p-3"  onClick={handleShow}>
+                                                    {cadeira[0]}
+                                                </Button>
+                                            </span>
+                                            <Modal show={show} onHide={handleClose}>
+                                                <Modal.Header closeButton>
+                                                    <Modal.Title>{nome}</Modal.Title>
+                                                </Modal.Header>
+                                                <Modal.Body>
 
-                                            <h6>Descrição</h6>
-                                            <p>{sobre}</p>
+                                                    <h6>Descrição</h6>
+                                                    <p>{sobre}</p>
 
 
-                                        </Modal.Body>
-                                    </Modal>
-                                </>
-                            )
+                                                </Modal.Body>
+                                            </Modal>
+                                        </>
+                                    )
+                                }
+
+                            })
+
                         }
 
-                    })
-
-                }
+                 </Col>
             </Row>
         </Container>
 

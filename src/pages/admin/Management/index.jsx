@@ -60,7 +60,7 @@ const body =  <>
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                    <Link to='/edit_subject' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Editar agora </Link>
+                    <Link to='/editar_cadeira' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Editar agora </Link>
                     </Card.Footer>
                 </Card>
 
