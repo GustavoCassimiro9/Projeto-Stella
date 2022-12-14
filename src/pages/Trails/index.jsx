@@ -13,7 +13,7 @@ export function Trails() {
 const body =  <> 
   <Row>
 
-    <CardGroup className="p-2">
+    <CardGroup className="p-5">
             
 
 <Col xs={12} xxl={3} md={6} sm={6} lg={6} xl={6}	>
@@ -96,7 +96,7 @@ const body =  <>
         <Card className=' m-4 border bg-light' style={{height:'90%'}}>
             {/* <Card.Img variant="top" src={image}/> */}
             
-            <Col xs={6} className="d-flex justify-content-center flex-column" style={{width:'100%',color:'#2A2356'}}>
+            <Col xs={6} className="d-flex justify-content-center flex-column" style={{width:'100%'}}>
               <Lottie 
                     style={{height: "200px"}}
                     animationData={games}
