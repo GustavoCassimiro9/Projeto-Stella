@@ -6,7 +6,6 @@ import coding from '../../assets/images/coding.json'
 import design from '../../assets/images/design.json'
 import audiovisual from '../../assets/images/audiovisual.json'
 import games from '../../assets/images/games.json'
-import './index.css'
 import { Link } from "react-router-dom";
 
 export function Trails() {
@@ -35,7 +34,7 @@ const body =  <>
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <Link to='/sistemas' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
+            <Link to='/sistemas_multimidia' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 
@@ -59,7 +58,7 @@ const body =  <>
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-            <Link to='/design' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
+            <Link to='/design_interativo' className='text-decoration-none d-flex align-items-center flex-column' style={{width:'100%',color:'#2A2356'}}> Saiba mais </Link>
             </Card.Footer>
         </Card>
 

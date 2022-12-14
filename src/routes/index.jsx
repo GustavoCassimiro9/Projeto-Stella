@@ -9,6 +9,10 @@ import { Trails } from "../pages/Trails"
 import { Subjects } from "../pages/Subjects"
 import { Simulator } from "../pages/Simulator"
 import { Information } from "../pages/Information"
+import { SistemasMultimidia } from "../pages/Trails/SistemasMultimidia"
+import { Jogos } from "../pages/Trails/Jogos"
+import { AudioVisual } from "../pages/Trails/AudioVisual"
+import { DesignInterativo } from "../pages/Trails/DesignInterativo"
 
 
 export function Rotas() {
@@ -84,7 +88,45 @@ export function Rotas() {
             <PrivateRoute>  
             <RegisterSubject />
         </PrivateRoute>
-        } />
+        } 
+    />
+
+    <Route 
+        path="/sistemas_multimidia" 
+        element={ 
+            <PrivateRoute>  
+            <SistemasMultimidia />
+        </PrivateRoute>
+        } 
+    />
+
+    <Route 
+        path="/jogos" 
+        element={ 
+            <PrivateRoute>  
+            <Jogos />
+        </PrivateRoute>
+        } 
+    />
+
+    <Route 
+        path="/design_interativo" 
+        element={ 
+            <PrivateRoute>  
+            <DesignInterativo />
+        </PrivateRoute>
+        } 
+    />
+
+    <Route 
+        path="/audiovisual" 
+        element={ 
+            <PrivateRoute>  
+            <AudioVisual />
+        </PrivateRoute>
+        } 
+    />
+
     </Routes>
 
     </BrowserRouter>

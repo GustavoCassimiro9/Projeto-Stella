@@ -1,9 +1,11 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import api from "../../../../services/api";
+import api from '../../../../services/api';
+import Swal from "sweetalert2";
 import { Container } from 'react-bootstrap';
 import { useState } from "react";
+import { Link, Navigate } from "react-router-dom";
 import style from "./index.css"
 import Sidebar from '../../../components/SideBar';
 
@@ -47,6 +49,16 @@ export function RegisterSubject(){
          }).then(function (response) {
             console.log(response);
             setRes(response)
+            Swal.fire({
+              popup: 'swal2-show',
+              position: 'top-end',
+              width: 300,
+              height:100,
+              icon: 'success',
+              title: 'Cadeira criada com sucesso',
+              showConfirmButton: false,
+              timer: 1500
+            })
           })
           .catch(function (error) {
             console.error(error);
@@ -127,13 +139,14 @@ export function RegisterSubject(){
     console.log(dia[0], dia[1])
     console.log(horario[0], horario[1])
     console.log(horarioCont)
-
-    const body = <>
-                <Container onKeyUp={eventsPag} className='p-2'>
+          const body = <>
+           <Container onKeyUp={eventsPag} className={style.Container} fluid>
+             
+              <div className={style.divCenter}>
               <Form onSubmit={submit} className={style.form} >
-
+             
                 <Form.Group className='mb-3'>
-                  <Form.Label className='h6'>Informe o nome da cadeira</Form.Label>
+                  <Form.Label className='h6'>Disciplina</Form.Label>
                   <Form.Control className={style.input} type='text' isInvalid={nomeInputEmpty} value={nome} onChange={(e) => setNome(e.target.value)}/>
                   <Form.Control.Feedback type='invalid'>
                     {emptyNameFeedback}
@@ -141,7 +154,7 @@ export function RegisterSubject(){
                 </Form.Group>
 
                 <Form.Group className='mb-3'>
-                  <Form.Label className='h6'>Escolha a Trilha</Form.Label><br/>
+                  <Form.Label className='h6'>Trilha</Form.Label><br/>
                     <Form.Select className={style.selectTrilhas} isInvalid={trilhaInputEmpty}>
                       <option value=""></option>
                       <option value="Sistemas Multimídia" onClick={(e) => setTrilha(e.target.value)}>Sistemas Multimídia</option>
@@ -155,7 +168,7 @@ export function RegisterSubject(){
                 </Form.Group>
 
                 <Form.Group className='mb-3'>
-                  <Form.Label className='h6'>Escolha o horário</Form.Label> <br/>
+                  <Form.Label className='h6'>Horário</Form.Label> <br/>
                   <Form.Label>Das</Form.Label>
                   
                   <Form.Control type='number' placeholder='00' className={style.inputHorario} isInvalid={horarioInputEmpty} value={horario[0]} onChange={(e) => setHorario([e.target.value])} />
@@ -170,7 +183,7 @@ export function RegisterSubject(){
                 </Form.Group>
 
                 <Form.Group className='mb-3'>
-                    <Form.Label className='h6'>Escolha os dias</Form.Label><br/>
+                    <Form.Label className='h6'>Dias</Form.Label><br/>
 
                     <Form.Label>Primeiro dia</Form.Label>
                     <Form.Select className={style.select} isInvalid={diaInputEmpty}>
@@ -196,7 +209,7 @@ export function RegisterSubject(){
                 </Form.Group>
 
                 <Form.Group className='mb-3'>
-                  <Form.Label className='h6'>Informe o Professor</Form.Label>
+                  <Form.Label className='h6'>Professor</Form.Label>
                   <Form.Control className={style.input} isInvalid={professorInputEmpty} type='text' value={professor} onChange={(e) => setProfessor(e.target.value)} />
                   <Form.Control.Feedback type='invalid'>
                        {emptyProfessorFeedback}
@@ -204,24 +217,31 @@ export function RegisterSubject(){
                 </Form.Group>
                   
                 <Form.Group className='mb-3'>
-                <Form.Label className='h6'>Informe sobre a cadeira</Form.Label>
+                <Form.Label className='h6'>Descrição da disciplina</Form.Label>
                   <Form.Control className={style.input} isInvalid={sobreInputEmpty} as="textarea" rows={3} value={sobre} onChange={(e) => setSobre(e.target.value)} />
                   <Form.Control.Feedback type='invalid'>
                        {emptySobreFeedback}
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                  <div  className='d-flex justify-content-md-end' style={{width:'100%'}}>
-                     <Button type="submit">Cadastrar</Button>
-                  </div>
+                <div className='d-flex justify-content-md-end mb-4' style={{width:'100%'}}>
+                  <Link to="/management" > <Button style={{width:'150px'}} variant="outline-primary !important" className='p-2 me-3' > Voltar </Button></Link>
+                  <Button type="submit"  variant="outline-primary"  className='p-2' style={{width:'150px'}} > Cadastrar </Button>
+                </div>
               </Form>
+              </div>
+
+              
                 
             </Container>
-    </>
+          </>
 
     return (
-      <>
-          <Sidebar sidebarTitle="REGISTRO DE CADEIRA" content={body} />
-      </>
+
+      <Sidebar
+      sidebarTitle='Registrar Cadeira'
+      content={body}
+      />
+
     )
 }

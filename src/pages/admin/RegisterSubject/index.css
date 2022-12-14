@@ -1,4 +1,8 @@
 .form{
+    margin: 0 auto !important;
+    width: 30rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
 }
 .input{
@@ -33,4 +37,25 @@
 }
 .labelh{
     display: inline;
+    
+}
+.divCenter{
+    margin: 0 auto;
+}
+.btnReturn{
+    margin-right: 18rem !important;
+    
+}
+.Container{
+    
+    background-color: #2A2356 !important;
+    color: aliceblue !important;
+}
+.logo{
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+.titulo{
+    
 }
