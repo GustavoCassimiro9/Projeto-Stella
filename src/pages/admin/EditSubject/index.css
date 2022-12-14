@@ -34,3 +34,29 @@
 .labelh{
     display: inline;
 }
+.Container{
+    background-color: #2A2356 !important;
+    color: aliceblue !important;
+    height: 100vh;
+}
+.td{
+    color: #f3f3f3  !important;
+
+    border: none !important;
+    text-align: center;
+}
+.th{
+    text-align: center;
+    color: #f3f3f3  !important;
+}
+.tbody{
+    border: none !important;
+
+}
+table{
+    border:none;
+}
+.btnReturn{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}

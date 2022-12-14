@@ -155,11 +155,16 @@ export function Login() {
                   <Form.Group className="mt-3 px-5 text-light"  >
 
                       <Form.Control 
-                      style={{backgroundColor:'#EEEEEE'}}
+                        style={{backgroundColor:'#EEEEEE'}}
                         type="password" 
                         className="p-3"
                         placeholder="Senha" 
                         id="password"
+                        onKeyDown={ (e) => {
+                            if(e.keyCode === 13){
+                                loginUser()
+                            }
+                        } }
                         isInvalid={passwordInputEmpty}
                         onChange={
                           (e) => setPasswordUser(e.target.value)

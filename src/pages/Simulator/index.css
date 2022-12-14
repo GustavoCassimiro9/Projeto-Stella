@@ -1,0 +1,32 @@
+th{
+    margin-right: 1rem !important;
+    padding: 1rem 3rem !important;
+    text-align: center !important;
+
+}
+td{
+    padding: 0.5rem !important;
+    width: 10rem !important;
+    padding-bottom: 1rem !important;
+
+}
+td{
+    font-size: 12px;
+    border-radius: 10px !important;
+    padding-bottom: 0.5rem !important;
+    width: initial;
+    text-align: center !important;
+    height: 4rem !important;
+    min-height: 2rem!important;
+   
+    font-weight: 600 !important;
+    margin-left: 10px !important;
+
+}
+tr{
+    padding-bottom: 5px !important;
+}
+
+.horas{
+    padding: 0 !important;
+}
