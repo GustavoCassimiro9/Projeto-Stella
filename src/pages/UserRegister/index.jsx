@@ -80,7 +80,6 @@ export function RegisterUser() {
             Swal.fire({
               grow: "row",
               timerProgressBar: true,
-              icon: 'success',
               iconColor: "green",
               title: res.data.msg,
               showConfirmButton: false,
@@ -98,7 +97,6 @@ export function RegisterUser() {
             Swal.fire({
               grow: "row",
               timerProgressBar: true,
-              icon: 'error',
               iconColor: "red",
               title: error.response.data.msg,
               showConfirmButton: false,
@@ -117,7 +115,6 @@ export function RegisterUser() {
             Swal.fire({
               grow: "row",
               timerProgressBar: true,
-              icon: 'error',
               iconColor: "red",
               title: 'Preencha todos os campos!',
               showConfirmButton: false,

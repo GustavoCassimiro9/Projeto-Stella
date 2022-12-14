@@ -21,12 +21,7 @@ export const SidebarData = [
         icon: <BiIcons.BiCalendar />,
         cName:'nav-text'
     },
-    {
-        title:'Disciplinas',
-        path:'/subjects',
-        icon: <AiIcons.AiOutlinePieChart/>,
-        cName:'nav-text'
-    },
+
     {
         title:'Informações',
         path:'/info',

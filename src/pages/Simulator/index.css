@@ -12,7 +12,6 @@ td{
 }
 td{
     font-size: 12px;
-    border-radius: 10px !important;
     padding-bottom: 0.5rem !important;
     width: initial;
     text-align: center !important;
@@ -29,4 +28,10 @@ tr{
 
 .horas{
     padding: 0 !important;
+}
+.btn:hover{
+    transform: rotate(5deg) !important;
+} 
+.btn{
+    border: none !important;
 }
