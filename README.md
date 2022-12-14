@@ -104,14 +104,14 @@ npm start
 |  Código                           |  Descrição                                                                                | Codificação   | Status | 
 |  ----------------------------     | ----------------------------------------------------------------                          | ------------  | ------ |
 |  RFE0001                          |  Exibir página de explicação de trilhas                                                   | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Trails">Código</a>      | Concluido       |
-|  RFE0002                          |  Exibir trilhas por área                                                                  | Em breve      |        |
-|  RFE0003                          |  Exibir área de calendário semanal e disciplinas ofertadas                                | Em breve      |        |
-|  RFE0004                          |  Selecionar disciplina correspondente para adicionar no calendário                        | Em breve      |        |
-|  RFE0005                          |  Exibir área de calendário semanal e disciplinas ofertadas                                | Em breve      |        |
-|  RFE0006                          |  Alterar disciplinas do calendário                                                        | Em breve      |        |
-|  RFE0007                          |  Excluir disciplinas do calendário                                                        | Em breve      |        |
+|  RFE0002                          |  Exibir trilhas por área                                                                  | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Trails">Código</a>      | Concluido       |
+|  RFE0003                          |  Exibir área de calendário semanal e disciplinas ofertadas                                | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Simulator">Código</a>      | Concluido       |
+|  RFE0004                          |  Selecionar disciplina correspondente para adicionar no calendário                        | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Simulator">Código</a>      | Concluido       |
+|  RFE0005                          |  Exibir área de calendário semanal e disciplinas ofertadas                                | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Simulator">Código</a>   |  Concluido      |
+|  RFE0006                          |  Alterar disciplinas do calendário                                                        | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Simulator">Código</a>    |  Concluido      |
+|  RFE0007                          |  Excluir disciplinas do calendário                                                        | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Simulator">Código</a>     | Concluido       |
 |  RFE0008                          |  Verificar se os horários das disciplinas selecionadas são iguais                         | Em breve      |        |
-|  RFE0009                          |  Exportar em formato pdf o calendário semanal                                             | Em breve      |        |
+|  RFE0009                          |  Exportar em formato pdf o calendário semanal                                             | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Simulator">Código</a>      | Concluido   |
 |  RFE0010                          |  Exibir home                                                                              | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Home">Código</a>       |  Concluido      |
 |  RFE0010                          |  Exibir menu de informações                                                               | <a href="https://github.com/GustavoCassimiro9/Projeto-Stella/tree/main/src/pages/Home">Código</a>       |  Concluido      |
 
