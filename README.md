@@ -5,7 +5,6 @@
   <br><br>
   <h1>:star2: Projeto Stella :star2:</h1>
   <br>
-  <h2><a href="https://www.youtube.com/watch?v=8vPh3GSlgBM" target="_blank">Link do video do resultado do projeto</a></h2>
 </div>
 <br><br>
 
@@ -21,7 +20,7 @@
 </h4>
 
 <br>
-<h1>Projeto ainda em desenvolvimento, portanto acrescentaremos mais funcionalidades e a maioria das coisas que prototipamos ou codificamos até aqui ainda o poderá sofrer atualizações.</h1>
+<h1><a href="https://www.youtube.com/watch?v=8vPh3GSlgBM" target="_blank">Link do video do resultado do projeto</a></h1>
 <br>
 
 <a name="sobre"></a>
