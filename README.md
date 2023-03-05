@@ -5,7 +5,7 @@
   <br><br>
   <h1>:star2: Projeto Stella :star2:</h1>
   <br>
-   <a href="https://www.youtube.com/watch?v=8vPh3GSlgBM">Link do video do resultado do projeto</a>
+  <h2><a href="https://www.youtube.com/watch?v=8vPh3GSlgBM" target="_blank">Link do video do resultado do projeto</a></h2>
 </div>
 <br><br>
 
